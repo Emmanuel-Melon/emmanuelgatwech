@@ -1,0 +1,48 @@
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  border: solid 0.1em #333;
+  background: #fff;
+  width: 950px;
+  margin-top: 1em;
+  display: flex;
+  padding: 1em;
+  transition: all .3s ease-in-out;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.projectImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  max-width: 300px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: gold;
+  margin: 0.2em;
+  padding: 0.3em;
+  color: #333;
+}
+
+input[type='text'] {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+form {
+  padding: 1em;
+}
