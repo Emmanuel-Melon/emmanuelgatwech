@@ -8,14 +8,14 @@ const Header = ({ siteTitle }) => (
       background: `white`,
       marginBottom: `1.45rem`,
       borderBottom: `solid 0.1em #333`,
-      boxShadow: `0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)`
+      boxShadow: `0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.1rem 1.0875rem`,
+        maxWidth: 1024,
+        padding: `1.1rem`,
         display: `flex`,
         justifyContent: `space-between`,
       }}
@@ -32,9 +32,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div style={{ display: `flex`, alignItems: `center` }}>
-        <Link to="/projects/">Projects</Link>
-        <Link to="/contact/">Contact</Link>
-        <Link to="/about/">About</Link>
+        <Link to="/projects/">👨🏾‍💻 Projects</Link>
+        <Link to="/contact/">📞 Contact</Link>
+        <Link to="/about/">🤓 About</Link>
         <Link to="/projects/">Resume</Link>
       </div>
     </div>
