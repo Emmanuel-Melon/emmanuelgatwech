@@ -1,4 +1,5 @@
 import React from "react"
+import contactStyles from '../components/contact.module.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,24 +14,31 @@ const ContactPage = () => {
         I'm a very laid back fella, I respond quickly but don't bother
         contacting me on weekends.
       </p>
-      <h3>Leave a Message</h3>
-      <form>
-        <div>
-          <div>
-            <input type="text" placeholder="Name" />
-          </div>
-          <div>
-            <input type="text" placeholder="Organization" />
-          </div>
+      <div className={contactStyles.content}>
+        <div className={contactStyles.leftPane}>
+          <h3>Leave a Message</h3>
+          <form>
+            <div className={contactStyles.user}>
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Organization" />
+              </div>
+            </div>
+            <div>
+              <input type="text" placeholder="Subject" />
+            </div>
+            <div>
+              <textarea placeholder="Your Message" />
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
-        <div>
-          <input type="text" placeholder="Subject" />
+        <div className={contactStyles.rightPane}>
+          <h3>Social Links</h3>
         </div>
-        <div>
-          <textarea placeholder="Your Message" />
-        </div>
-        <button type="submit">Send</button>
-      </form>
+      </div>
     </Layout>
   )
 }

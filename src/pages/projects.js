@@ -51,7 +51,7 @@ const projects = [
     summary:
       "A distributed key/value store database inspired by Cassandra's architecture",
     skills: ["Rust", "Distributed Systems", "Key/Value", "Consistent Hashing"],
-    code: "https://github.com/Emmanuel-Melon/la-revue",
+    code: "https://github.com/Emmanuel-Melon/ney_db",
     demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {

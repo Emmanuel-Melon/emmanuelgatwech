@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+}
+
+.leftPange {
+  flex: 2;
+}
+
+.rightPange {
+  flex: 1;
+}
+
+
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user > input[type="text"] {
+  margin: 0.5em;
+}

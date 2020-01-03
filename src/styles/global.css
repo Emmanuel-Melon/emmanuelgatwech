@@ -30,7 +30,8 @@ h1:after {
 }
 
 p,
-a {
+a,
+span {
   font-family: "Dosis", Arial, Helvetica, sans-serif;
 }
 
@@ -70,4 +71,35 @@ button:hover {
   width: 100%;
   justify-content: space-between;
   margin: 0.3em;
+}
+
+.background {
+  background: #fff;
+  padding: 0.5em;
+  margin-bottom: 0.3em;
+  border: solid 0.1em #333;
+}
+
+.center { 
+  display: flex;
+}
+
+.left {
+  flex: 1;
+}
+
+
+.right {
+  flex: 2;
+}
+
+.skills {
+  list-style-type: none;
+}
+
+.skills li {
+  display: inline;
+  padding: 0.5em;
+  margin: 1.5em;
+  background: #fff;
 }
