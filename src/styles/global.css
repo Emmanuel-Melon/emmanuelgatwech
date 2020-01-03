@@ -1,26 +1,32 @@
 html,
 body {
-  background: #ffeeee; /* fallback for old browsers */
+  background: #ffe259; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ddefbb,
-    #ffeeee
+    #ffa751,
+    #ffe259
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ddefbb,
-    #ffeeee
+    #ffa751,
+    #ffe259
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* typography */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Audiowide", Arial, Helvetica, sans-serif;
+h3 {
+  font-family: "Audiowide", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+}
+
+h1:after {
+  display: block;
+  content: "";
+  border-bottom: 0.3em orange;
+  width: 25%;
+  height: 10px;
 }
 
 p,
@@ -35,7 +41,6 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-
 img {
   width: 100%;
   height: auto;
@@ -45,11 +50,24 @@ button {
   padding: 0.5em;
   background: transparent;
   border: solid 0.1em #333;
-  width: 200px;
+  width: 48%;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
 }
 
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0.3em;
 }

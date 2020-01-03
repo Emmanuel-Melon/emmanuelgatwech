@@ -25,6 +25,8 @@ const projects = [
     link: "",
     completed: false,
     started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 2,
@@ -32,12 +34,16 @@ const projects = [
     summary:
       "Yonja is a GIS-enabled mobile application designed to provide and improve waste and sanitation service delivery in urban areas of Uganda, by connecting legally registered waste management entrepreneurs to customers. ",
     skills: ["Node.js", "MongoDB", "Cloud Functions", "React"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 3,
     name: "La Revue",
     summary: "A restaurant review website",
     skills: ["Algolia", "Node.js", "MongoDB", "React.js", "Google Maps API"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 4,
@@ -45,6 +51,8 @@ const projects = [
     summary:
       "A distributed key/value store database inspired by Cassandra's architecture",
     skills: ["Rust", "Distributed Systems", "Key/Value", "Consistent Hashing"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 5,
@@ -52,12 +60,16 @@ const projects = [
     summary:
       "A messenger chat bot for a wine marketing and distribution company",
     skills: ["Messenger API", "Node.js"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 6,
     name: "RustMQ",
     summary: "My attempt at porting RSMQ into Rust.",
     skills: ["Rust", "Redis"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 7,
@@ -65,6 +77,8 @@ const projects = [
     summary:
       "A tiny compiler that supports static typing and Object Oriented Programming. It's based on COOL and is written in C++.",
     skills: ["C++", "Compilers", "Algorithms"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 8,
@@ -72,12 +86,16 @@ const projects = [
     summary:
       "Random quote generator which constructs quotes by assembling different pieces of a sentence.",
     skills: ["JavaScript", "Sass", "HTML/CSS"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 8,
     name: "Shadows of Mordor",
     summary: "A turn-based JavaScript board game.",
     skills: ["JavaScript", "HTML/CSS", "jQuery"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 9,
@@ -85,18 +103,24 @@ const projects = [
     summary:
       "A prototype for a static website built using HTML/CSS and JavaScript. It utilizes the Bootstrap CSS Framework for it's flexible grid system and ease of use.",
     skills: ["HTML/CSS", "Bootstrap", "Prototype"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 10,
     name: "Rust Tiny Server",
     summary: "An HTTP web server implementation in Rust",
     skills: ["Rust", "http", "tcp"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 11,
     name: "TodoMVC",
     summary: "An MVC todo app",
     skills: ["HTML/CSS", "jasmine", "tdd", "JavaScript", "DevTools"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 12,
@@ -104,6 +128,8 @@ const projects = [
     summary:
       "An Open Source project that demonstrates various UI layouts in React.js",
     skills: ["React.js", "Open Source"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 13,
@@ -111,6 +137,8 @@ const projects = [
     summary:
       "A card checkout screen that allows users to add items to a cart and then validate their payment method.",
     skills: ["JavaScript", "HTML/CSS"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 14,
@@ -118,6 +146,8 @@ const projects = [
     summary:
       "A rent seeking platform where property owners upload their properties for potential tenants.",
     skills: ["Node.js", "Pug", "SSR"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 15,
@@ -125,6 +155,8 @@ const projects = [
     summary:
       "A portal that allows interested community members to join the Kampala Developer Circle platform where they could receive mentorship, partner up in projects and look for job opportunuties.",
     skills: ["HTML/CSS", "JavaScript", "Open Source"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 16,
@@ -132,6 +164,8 @@ const projects = [
     summary:
       "A simple video chat application built on top of the WebRTC protocol that uses Socket.Io as its signaling server.",
     skills: ["WebRTC", "HTML5", "Socket.Io"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 17,
@@ -139,15 +173,47 @@ const projects = [
     summary:
       "Express Food is a start up based in Paris, France that delivers high quality meals to residences in less than 20 minutes with their team of delivery bikes.",
     skills: ["UML", "Domain Driven Design", "Software Design"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
   },
   {
     id: 18,
     name: "Personal Website",
-    summary: "My own personal website and portfolio. Built using Gatsby.js and GraphQL",
-    skills: ["GraphQ", "GatsbyJS"]
-  }
+    summary:
+      "My own personal website and portfolio. Built using Gatsby.js and GraphQL",
+    skills: ["GraphQL", "GatsbyJS", "UX/UI", "Adobe XD"],
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
+  },
 ]
 
+const shuffle = array => {
+  var currentIndex = array.length
+
+  var temporaryValue
+
+  var randomIndex
+
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array
+}
+
+
+// an extra challenge, retrieve all of your repositories from the Github API
+// extract their tags, descriptions and URLs
+// use that instead
+//
 const ProjectsPage = () => {
   const [currentProject, setProject] = useState(null)
 
