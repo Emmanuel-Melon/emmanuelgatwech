@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 1024,
-        padding: `1.1rem`,
+        padding: `1.5rem`,
         display: `flex`,
         justifyContent: `space-between`,
       }}
@@ -34,7 +34,6 @@ const Header = ({ siteTitle }) => (
       <div style={{ display: `flex`, alignItems: `center` }}>
         <Link to="/projects/">👨🏾‍💻 Projects</Link>
         <Link to="/contact/">📞 Contact</Link>
-        <Link to="/about/">🤓 About</Link>
         <Link to="/projects/">Resume</Link>
       </div>
     </div>
