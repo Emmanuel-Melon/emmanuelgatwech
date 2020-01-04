@@ -24,15 +24,6 @@ const AboutPage = () => {
               <li>Messenger & Twitter Bots</li>
             </ul>
           </div>
-          <div>
-            <h3>What do I do?</h3>
-            <ul className='skills'>
-              <li>Web Applications</li>
-              <li>Backend & infrastructure</li>
-              <li>Software Design & Archiecture</li>
-              <li>Messenger & Twitter Bots</li>
-            </ul>
-          </div>
         </div>
         <div className="right">
           <div className="background">
