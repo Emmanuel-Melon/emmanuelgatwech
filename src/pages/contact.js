@@ -9,10 +9,9 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
-      <h1>About</h1>
+      <h1>Contact Me</h1>
       <p>
-        I'm a very laid back fella, I respond quickly but don't bother
-        contacting me on weekends.
+        Let's have a little chat
       </p>
       <div className={contactStyles.content}>
         <div className={contactStyles.leftPane}>

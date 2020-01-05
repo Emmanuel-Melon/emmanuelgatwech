@@ -13,5 +13,6 @@ A personal website showcasing my development skills for potential clients and em
 - [ ] Responsive Navigation bar
 - [ ] Improve Services/Skills sections
 - [ ] Add moving background animations
+- [ ] Add Blog
 
 what is debouncing?
