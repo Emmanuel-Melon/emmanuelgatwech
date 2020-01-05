@@ -14,5 +14,8 @@ A personal website showcasing my development skills for potential clients and em
 - [ ] Improve Services/Skills sections
 - [ ] Add moving background animations
 - [ ] Add Blog
+- [ ] Active Links
+- [ ] Data Fetching
+- [ ] Add Images
 
 what is debouncing?
