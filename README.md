@@ -1,9 +1,17 @@
 # My Personal Website
+A personal website showcasing my development skills for potential clients and employers.  
 
-## Features
+## Objectives
 - [ ] Animations
 - [ ] Responsive Design
-- [ ] Accessiblity
+- [ ] Accessibility
 - [ ] Offline Access
+- [ ] Animate Breakpoints
+- [ ] Make resume downloadable
+- [ ] Improve SEO
+- [ ] Enable Dark/Light Modes
+- [ ] Responsive Navigation bar
+- [ ] Improve Services/Skills sections
+- [ ] Add moving background animations
 
 what is debouncing?
