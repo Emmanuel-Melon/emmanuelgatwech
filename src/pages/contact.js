@@ -17,20 +17,26 @@ const ContactPage = () => {
       <div className={contactStyles.content}>
         <div className={contactStyles.leftPane}>
           <h3>Leave a Message</h3>
-          <form className={contactStyles.form}>
+          <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb">
             <div className={contactStyles.user}>
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Organization" />
-              </div>
+                <label className={contactStyles.label}>
+                  Name
+                  <input type="text" placeholder="Name" id="Name" name="name" />
+                </label>
+                <label className={contactStyles.label}>
+                  Email
+                  <input type="text" placeholder="Email Address"  id="Email Address" name="_replyto"/>
+                </label>
             </div>
             <div>
-              <input type="text" placeholder="Subject" className={contactStyles.subject} />
-            </div>
-            <div>
-              <textarea placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} />
+              <label className={contactStyles.label}>
+                Subject
+                <input type="text" placeholder="Subject" id="subject" className={contactStyles.subject} name="subject" />
+              </label>
+              <label className={contactStyles.label}>
+                Message
+                <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" />
+              </label>
             </div>
             <button type="submit">Send</button>
           </form>

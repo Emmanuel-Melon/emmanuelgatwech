@@ -1,17 +1,44 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .project {
+    border-bottom: solid 0.2em #333;
+    background: #fff;
+    width: 100%;
+    margin: 0.2em;
+    display: flex;
+    padding: 0.9em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project {
+    border-bottom: solid 0.2em #333;
+    background: #fff;
+    width: 100%;
+    margin: 0.2em;
+    display: flex;
+    padding: 0.9em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project {
+    border-bottom: solid 0.2em #333;
+    background: #fff;
+    width: 49%;
+    margin: 0.2em;
+    display: flex;
+    padding: 0.9em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+
 .projectList {
   display: flex;
   flex-wrap: wrap;
-}
-
-.project {
-  border-bottom: solid 0.2em #333;
-  background: #fff;
-
-  width: 49%;
-  margin: 0.2em;
-  display: flex;
-  padding: 0.9em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .projectImage {
@@ -47,7 +74,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
 }
 
 .filterOptions {
