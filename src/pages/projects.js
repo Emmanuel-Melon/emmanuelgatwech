@@ -262,7 +262,7 @@ const ProjectsPage = () => {
 
   return (
     <Layout>
-      <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <h1>My Projects</h1>
       <p>Some of the most recent projects that I've worked on.</p>
       <div className={projectStyles.cloud} />

@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <h1>About</h1>
       <p>
         I'm a very laid back fella, I respond quickly but don't bother
