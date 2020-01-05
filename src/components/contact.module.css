@@ -2,34 +2,33 @@
   display: flex;
 }
 
-.leftPange {
-  flex: 2;
-}
-
-.rightPange {
-  flex: 1;
-}
-
 
 .user {
   display: flex;
-  justify-content: space-between;
 }
 
 .message {
   outline: none;
   resize: none;
-  width: 810px;
+  width: 98%;
   height: 120px;
-  border: 3px solid #cccccc;
+  border: 2px solid #cccccc;
   padding: 10px;
+  margin-bottom: 0.5em;
 }
 
 .user input[type="text"], .subject {
   margin-right: 0.5em;
-  width: 400px;
   margin-bottom: 0.5em;
   outline: none;
-  border: 3px solid #cccccc;
+  border: 2px solid #cccccc;
   padding: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  width: 300px;
 }
