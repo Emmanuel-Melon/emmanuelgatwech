@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -32,7 +33,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div style={{ display: `flex`, alignItems: `center` }}>
-        <Link to="/projects/"> Projects</Link>
+        <AniLink to="/projects/"> Projects</AniLink>
+        <Link to="/blog/">Blog</Link>
         <Link to="/contact/">Contact</Link>
       </div>
     </div>

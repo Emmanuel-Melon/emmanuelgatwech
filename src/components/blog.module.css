@@ -1,0 +1,41 @@
+.articleSummary {
+    background: white;
+    padding: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .articleSummary {
+        background: white;
+        padding: 1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articleSummary {
+        background: white;
+        padding: 1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+.tags {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.tag {
+    background: #ffe259;
+    margin: 0.2em;
+    padding: 0.5em;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.title:hover {
+    cursor: pointer;
+}
