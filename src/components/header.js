@@ -32,9 +32,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div style={{ display: `flex`, alignItems: `center` }}>
-        <Link to="/projects/">👨🏾‍💻 Projects</Link>
-        <Link to="/contact/">📞 Contact</Link>
-        <Link to="/projects/">Resume</Link>
+        <Link to="/projects/"> Projects</Link>
+        <Link to="/contact/">Contact</Link>
       </div>
     </div>
   </header>
