@@ -38,14 +38,14 @@ const projects = [
     skills: ["Node.js", "MongoDB", "Cloud Functions", "React", "Material UI"],
     demo: "https://play.google.com/store/apps/details?id=com.yonjainc.yonja",
     completed: true,
-    demoAvailable: false,
+    demoAvailable: true,
     sourceAvailable: false,
   },
   {
     id: 3,
     name: "La Revue",
     summary:
-      "A restaurant review website that allows you find and review restaurants in any city.",
+      "A restaurant review website that allows you find and review restaurants in any city. The app allows you to search, filter, add reviews and look for meals.",
     skills: [
       "Algolia",
       "Node.js",
@@ -56,9 +56,9 @@ const projects = [
     ],
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "https://morning-beach-13124.herokuapp.com/",
-    completed: true,
-    demoAvailable: false,
-    sourceAvailable: false,
+    completed: false,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 4,
@@ -67,8 +67,9 @@ const projects = [
       "A distributed key/value store database inspired by Cassandra's architecture",
     skills: ["Rust", "Distributed Systems", "Key/Value", "Consistent Hashing"],
     code: "https://github.com/Emmanuel-Melon/ney_db",
-    demoAvailable: false,
-    sourceAvailable: false,
+    demoAvailable: true,
+    sourceAvailable: true,
+    completed: false,
   },
   {
     id: 5,
@@ -78,7 +79,8 @@ const projects = [
     skills: ["Messenger API", "Node.js", "E-Commerce", "Facebook Payments"],
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "https://m.me/104195541107475",
-    demoAvailable: false,
+    demoAvailable: true,
+    completed: false,
     sourceAvailable: false,
   },
   {
@@ -87,8 +89,9 @@ const projects = [
     summary: "My attempt at porting RSMQ into Rust.",
     skills: ["Rust", "Redis", "Message Queue"],
     code: "https://github.com/Emmanuel-Melon/rust_rsmq",
-    demoAvailable: false,
-    sourceAvailable: false,
+    demoAvailable: true,
+    sourceAvailable: true,
+    completed: false,
   },
   {
     id: 7,
@@ -97,8 +100,9 @@ const projects = [
       "A tiny compiler that supports static typing and Object Oriented Programming. It's based on COOL and is written in C++.",
     skills: ["C++", "Compilers", "Algorithms", "COOL", "OOP"],
     code: "https://github.com/Emmanuel-Melon/melon",
-    demoAvailable: false,
-    sourceAvailable: false,
+    demoAvailable: true,
+    completed: false,
+    sourceAvailable: true,
   },
   {
     id: 8,
@@ -109,8 +113,8 @@ const projects = [
     code: "https://github.com/Emmanuel-Melon/Quote-Generator",
     demo: "https://emmanuel-melon.github.io/Quote-Generator/",
     completed: true,
-    demoAvailable: false,
-    sourceAvailable: false,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 8,
@@ -126,6 +130,9 @@ const projects = [
     ],
     code: "https://github.com/Emmanuel-Melon/shadows_of_morodor",
     demo: "https://shadows-of-mordor.herokuapp.com/",
+    demoAvailable: true,
+    completed: false,
+    sourceAvailable: true,
   },
   {
     id: 9,
@@ -136,6 +143,8 @@ const projects = [
     code: "https://github.com/Emmanuel-Melon/Film-Festival",
     demo: "https://emmanuel-melon.github.io/Film-Festival/",
     completed: true,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 10,
@@ -144,6 +153,9 @@ const projects = [
     skills: ["Rust", "http", "tcp"],
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "https://morning-beach-13124.herokuapp.com/",
+    demoAvailable: true,
+    completed: false,
+    sourceAvailable: true,
   },
   {
     id: 11,
@@ -153,6 +165,8 @@ const projects = [
     code: "https://github.com/Emmanuel-Melon/vanilla-todo",
     demo: "https://emmanuel-melon.github.io/vanilla-todo/",
     completed: true,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 12,
@@ -161,6 +175,9 @@ const projects = [
       "An Open Source project that demonstrates various UI layouts in React.js",
     skills: ["React.js", "Open Source", "UX/UI"],
     code: "https://github.com/Albystein/React-Layouts",
+    demoAvailable: true,
+    sourceAvailable: true,
+    completed: true,
   },
   {
     id: 13,
@@ -171,6 +188,8 @@ const projects = [
     code: "https://github.com/Emmanuel-Melon/card-checkout-screen",
     demo: "https://emmanuel-melon.github.io/card-checkout-screen/",
     completed: true,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 14,
@@ -180,6 +199,9 @@ const projects = [
     skills: ["Node.js", "Pug", "SSR"],
     code: "https://github.com/Emmanuel-Melon/byarent",
     demo: "https://emmanuel-melon.github.io/byarent/",
+    demoAvailable: true,
+    sourceAvailable: true,
+    completed: false,
   },
   {
     id: 15,
@@ -189,6 +211,9 @@ const projects = [
     skills: ["HTML/CSS", "JavaScript", "Open Source", "Node.js"],
     code: "https://github.com/devckla/devckla.github.io",
     demo: "https://morning-beach-13124.herokuapp.com/",
+    demoAvailable: true,
+    completed: true,
+    sourceAvailable: true,
   },
   {
     id: 16,
@@ -198,6 +223,9 @@ const projects = [
     skills: ["WebRTC", "HTML5", "Socket.Io"],
     code: "https://github.com/Emmanuel-Melon/webrtc_video_chat",
     demo: "https://emmanuel-melon.github.io/webrtc_video_chat/",
+    demoAvailable: true,
+    sourceAvailable: true,
+    completed: true,
   },
   {
     id: 17,
@@ -207,6 +235,8 @@ const projects = [
     skills: ["UML", "Domain Driven Design", "Software Design"],
     code: "https://github.com/Emmanuel-Melon/Express-Food",
     completed: true,
+    demoAvailable: true,
+    sourceAvailable: true,
   },
   {
     id: 18,
@@ -218,6 +248,8 @@ const projects = [
     demo: "https://morning-beach-13124.herokuapp.com/",
     private: true,
     completed: true,
+    demoAvailable: true,
+    sourceAvailable: false,
   },
 ]
 

@@ -17,7 +17,7 @@ const ContactPage = () => {
       <div className={contactStyles.content}>
         <div className={contactStyles.leftPane}>
           <h3>Leave a Message</h3>
-          <form>
+          <form className={contactStyles.form}>
             <div className={contactStyles.user}>
               <div>
                 <input type="text" placeholder="Name" />
@@ -27,16 +27,13 @@ const ContactPage = () => {
               </div>
             </div>
             <div>
-              <input type="text" placeholder="Subject" />
+              <input type="text" placeholder="Subject" className={contactStyles.subject} />
             </div>
             <div>
-              <textarea placeholder="Your Message" />
+              <textarea placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} />
             </div>
             <button type="submit">Send</button>
           </form>
-        </div>
-        <div className={contactStyles.rightPane}>
-          <h3>Social Links</h3>
         </div>
       </div>
     </Layout>
