@@ -8,9 +8,11 @@ const ArticleSummary = ({ article }) => {
     <div className={styles.articleSummary}>
       <h3 className={styles.title}>
         <Link to={`/blog/${article.id}`}>
+          #{article.id} -
         {article.title}
       </Link>
       </h3>
+      <h5>{article.subtitle}</h5>
       <p>{Moment(Date.now()).calendar()}</p>
       <p>{article.summary}</p>
       <ul className={styles.tags}>

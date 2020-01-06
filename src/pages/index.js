@@ -6,7 +6,20 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
+    <SEO
+      title="Home"
+      keywords={[
+        `Emmanuel Daniel`,
+        `Emmanuel Gatwech`,
+        `react`,
+        `Node.js`,
+        `Eman`,
+        `Junubiman`,
+        `South Sudan`,
+        `Juba`,
+        `Software Engineer`,
+      ]}
+    />
     <div className="content">
       <div>
         <h1>Emmanuel Daniel</h1>
@@ -20,25 +33,10 @@ const IndexPage = () => (
           <br />
           This was followed by a very long of making mistakes and learning from
           them to captiously grow to where I am at today.
-        <br />
-          A few months later, I got introduced to HTML/CSS and JavaScript and I
-          built my very first website; it wasn't so great but that's how I fell in love with Web Development.
+          <br />A few months later, I got introduced to HTML/CSS and JavaScript
+          and I built my very first website; it wasn't so great but that's how I
+          fell in love with Web Development.
         </p>
-        <h3>The Now</h3>
-        <p>
-          I build Full-Stack applications from the ground up all the way to
-          deployments.
-        </p>
-        <ul className='services'>
-          <li>
-            Server Side Code in Node.js, MongoDB, Redis, Rust and RabbitMQ.
-          </li>
-          <li>
-            Front Ends in HTML, CSS, Sass, jQuery, React, React Native &
-            Angular/Ionic.
-          </li>
-          <li>Design Software Systems for Usability, Scalability and Performance.</li>
-        </ul>
         <h4>Wanna know more?</h4>
         <button>
           <Link to="/projects/">See My Work</Link>
