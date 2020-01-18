@@ -37,7 +37,7 @@ const ProjectSummary = ({ project }) => {
 
         <div className={projectStyles.skillList}>
           {project.skills.map(skill => (
-            <a className={projectStyles.skill}> {skill}</a>
+            <p className={projectStyles.skill}> {skill}</p>
           ))}
         </div>
       </div>

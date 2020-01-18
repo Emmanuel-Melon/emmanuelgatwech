@@ -3,29 +3,33 @@ import PropTypes from "prop-types"
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import styled from 'styled-components'
+
+const Head = styled.header`
+    background: rgb(14,4,1);
+  background: linear-gradient(9deg, rgba(14,4,1,0.8) 0%, rgba(46,17,8,0.8) 35%, rgba(24,5,1,0.8) 100%);
+  margin-bottom: 1.5em;
+ 
+`
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `white`,
-      marginBottom: `1.45rem`,
-      borderBottom: `solid 0.1em #333`,
-      boxShadow: `0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)`,
-    }}
+  <Head
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 1024,
-        padding: `1.5rem`,
+        maxWidth: 960,
+        padding: `1rem`,
         display: `flex`,
         justifyContent: `space-between`,
+        color: `#f83600`,
       }}
     >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `#333`,
+            color: `#f83600`,
             textDecoration: `underline`,
           }}
         >
@@ -38,7 +42,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/contact/">Contact</Link>
       </div>
     </div>
-  </header>
+  </Head>
 )
 
 Header.propTypes = {
