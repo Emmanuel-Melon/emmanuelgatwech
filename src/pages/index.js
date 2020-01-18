@@ -44,9 +44,8 @@ const IndexPage = () => (
           <br />
           This was followed by a very long of making mistakes and learning from
           them to captiously grow to where I am at today.
-          <br />A few months later, I got introduced to HTML/CSS and JavaScript
-          and I built my very first website; it wasn't so great but that's how I
-          fell in love with Web Development.
+          <br />
+          I can help you build accessible, performant and scalable applications using software's practices.
         </p>
         <h3 className='sub-heading'>How Can I Help you?</h3>
         <ul className='me'>

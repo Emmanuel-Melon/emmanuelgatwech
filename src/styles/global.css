@@ -251,6 +251,7 @@ span {
   }
   main, .content {
     padding: 0.8rem;
+    margin-bottom: 2em;
   }
 
   h1 {
@@ -265,11 +266,16 @@ span {
   }
   main, .content {
     padding: 0.8rem;
+    margin-bottom: 2em;
   }
 
   h1 {
     font-size: 1.3rem;
   }
+}
+
+main {
+  margin-bottom: 2em;
 }
 
 .content {
