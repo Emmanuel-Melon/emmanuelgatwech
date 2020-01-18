@@ -34,7 +34,7 @@ const IndexPage = () => (
       <div>
         <h1 className='heading'>Full-Snack Developer</h1>
         <p className='intro'>
-          Hi there, my name is <span className='orange'>Emmanuel Daniel</span><br />
+          Hi there, my name is Emmanuel Daniel<br />
           I am a Freelance Developer from 🇸🇸South Sudan🇸🇸, friends call me Eman
           or JunubiMan which literally translates to "Southern Guy".
         </p>

@@ -146,7 +146,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 8,
+    id: 9,
     name: "Shadows of Mordor",
     summary: "A turn-based JavaScript board game.",
     skills: [
@@ -165,7 +165,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 9,
+    id: 10,
     name: "Film Festival",
     summary:
       "A prototype for a static website built using HTML/CSS and JavaScript. It utilizes the Bootstrap CSS Framework for it's flexible grid system and ease of use.",
@@ -178,7 +178,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 10,
+    id: 11,
     name: "Rust Tiny Server",
     summary: "An HTTP web server implementation in Rust",
     skills: ["Rust", "http", "tcp"],
@@ -190,7 +190,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 11,
+    id: 12,
     name: "TodoMVC",
     summary: "An MVC todo app",
     skills: ["HTML/CSS", "jasmine", "tdd", "JavaScript", "DevTools"],
@@ -201,7 +201,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
-    id: 12,
+    id: 13,
     name: "React Layouts",
     summary:
       "An Open Source project that demonstrates various UI layouts in React.js",
@@ -213,7 +213,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 13,
+    id: 14,
     name: "Card Checkout Screen",
     summary:
       "A card checkout screen that allows users to add items to a cart and then validate their payment method.",
@@ -226,7 +226,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 14,
+    id: 15,
     name: "Byarent",
     summary:
       "A rent seeking platform where property owners upload their properties for potential tenants.",
@@ -239,7 +239,7 @@ const projects = [
   },
   {
 
-    id: 15,
+    id: 16,
     name: "Developer Circle Kampala Portal",
     summary:
       "A portal that allows interested community members to join the Kampala Developer Circle platform where they could receive mentorship, partner up in projects and look for job opportunuties.",
@@ -252,7 +252,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 16,
+    id: 17,
     name: "WebRTC Video Chat",
     summary:
       "A simple video chat application built on top of the WebRTC protocol that uses Socket.Io as its signaling server.",
@@ -265,7 +265,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 17,
+    id: 18,
     name: "Express Food",
     summary:
       "Express Food is a start up based in Paris, France that delivers high quality meals to residences in less than 20 minutes with their team of delivery bikes.",
@@ -277,7 +277,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 18,
+    id: 19,
     name: "Personal Website",
     summary:
       "My own personal website and portfolio. Built using Gatsby.js and GraphQL",
@@ -293,7 +293,7 @@ const projects = [
     category: "professional",
     demoAvailable: true,
     sourceAvailable: false,
-    id: 1,
+    id: 20,
     name: "Claudia Acham",
     summary:
       "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
