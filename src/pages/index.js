@@ -38,7 +38,7 @@ const IndexPage = () => (
           I am a Freelance Developer from 🇸🇸South Sudan🇸🇸, friends call me Eman
           or JunubiMan which literally translates to "Southern Guy".
         </p>
-        <h3 className='sub-heading'>My Journey</h3>
+        <h3 className='sub-heading'>About Me</h3>
         <p>
           I wrote my first "Hello, World" in C on the 12th of September, 2015.{" "}
           <br />
@@ -48,11 +48,11 @@ const IndexPage = () => (
           and I built my very first website; it wasn't so great but that's how I
           fell in love with Web Development.
         </p>
-        <h3 className='sub-heading'>What I do now?</h3>
+        <h3 className='sub-heading'>How Can I Help you?</h3>
         <ul className='me'>
-          <li>Chat Bots</li>
-          <li>Single Web Applications, Landing Pages & Static Websites</li>
           <li>API Development & Integration</li>
+          <li>Single Page Applications & Static Websites</li>
+          <li>Chat Bots for Slack, Twitter & Facebook Messenger</li>
           <li>WebRTC & Real-Time Applications</li>
         </ul>
         <h3 className='sub-heading'>Wanna know more?</h3>
