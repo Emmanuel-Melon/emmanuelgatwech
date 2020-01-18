@@ -4,7 +4,15 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { FaArrowRight, FaTwitter, FaGithub, FaMedium } from 'react-icons/fa'
+import {
+  FaArrowRight,
+  FaTwitter,
+  FaGithubAlt,
+  FaMediumM,
+  FaStackOverflow,
+  FaDev,
+  FaLinkedinIn,
+} from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
@@ -58,17 +66,32 @@ const IndexPage = () => (
           <ul>
             <li>
               <a href="https://twitter.com/junubiman" target="_blank">
-                <FaTwitter size='2.5em' className='icon' />
+                <FaTwitter size='2em' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://github.com/Emmanuel-Melon" target="_blank">
-                <FaGithub size='2.5em' className='icon' />
+                <FaGithubAlt size='2em' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://medium.com/@emmanuelgdaniel" target="_blank">
-                <FaMedium size='2.5em' className='icon' />
+                <FaMediumM size='2em' className='icon' />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/emmanuel-gatwech/" target="_blank">
+                <FaLinkedinIn size='2em' className='icon' />
+              </a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/6583352/emmanuel-gabriel" target="_blank">
+                <FaStackOverflow size='2em' className='icon' />
+              </a>
+            </li>
+            <li>
+              <a href="https://dev.to/junubiman" target="_blank">
+                <FaDev size='2em' className='icon' />
               </a>
             </li>
           </ul>
