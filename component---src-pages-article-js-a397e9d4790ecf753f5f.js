@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{z8hX:function(e,n,t){"use strict";t.r(n);var a=t("Bl7J"),l=t("vrFN"),r=t("q1tI"),u=t.n(r);n.default=function(){return u.a.createElement(a.a,null,u.a.createElement(l.a,{title:"Projects",keywords:["Emmanuel Daniel","Emmanuel Gatwech","react","Node.js","Eman","Junubiman","South Sudan","Juba","Software Engineer"]}),u.a.createElement("h1",null,"An Article"),u.a.createElement("p",null,"Really Love doing this shit tbh"))}}}]);
+//# sourceMappingURL=component---src-pages-article-js-a397e9d4790ecf753f5f.js.map
