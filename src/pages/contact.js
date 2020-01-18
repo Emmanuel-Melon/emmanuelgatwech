@@ -9,13 +9,16 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
-      <h1>Contact Me</h1>
+      <div className='main'>
+        <div>
+              <h1>Contact Me</h1>
       <p>
         Let's have a little chat
-      </p>
+      </p></div>
+      </div>
       <div className={contactStyles.content}>
         <div className={contactStyles.leftPane}>
-          <h3>Leave a Message</h3>
+          <h3 className='sub-heading'>Leave a Message</h3>
           <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb">
             <div className={contactStyles.user}>
                 <label className={contactStyles.label}>
@@ -37,7 +40,7 @@ const ContactPage = () => {
                 <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" />
               </label>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" className='work'>Send</button>
           </form>
         </div>
       </div>

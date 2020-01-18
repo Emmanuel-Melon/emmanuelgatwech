@@ -31,6 +31,28 @@ const bumu = {
 
 const projects = [
   {
+    category: "professional",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 1,
+    name: "Style Bites",
+    summary:
+      "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
+    skills: [
+      "Gatsby.js",
+      "Ghost",
+      "E-Commerce",
+      "Adobe XD",
+      "Google Analytics",
+    ],
+    link: "",
+    completed: false,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
+  },
+  {
+    category: "professional",
     id: 2,
     name: "Yonja",
     summary:
@@ -42,6 +64,7 @@ const projects = [
     sourceAvailable: false,
   },
   {
+    category: "personal",
     id: 3,
     name: "La Revue",
     summary:
@@ -61,6 +84,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 4,
     name: "NeyDB",
     summary:
@@ -72,11 +96,12 @@ const projects = [
     completed: false,
   },
   {
+    category: "professional",
     id: 5,
-    name: "Winey Bot",
+    name: "Doof Bot",
     summary:
       "A messenger chat bot for a wine marketing and distribution company. It alows clients to place orders directly from within the Bot.",
-    skills: ["Messenger API", "Node.js", "E-Commerce", "Facebook Payments"],
+    skills: ["Messenger API", "Node.js", "PostgreSQL", "Facebook Payments"],
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "https://m.me/104195541107475",
     demoAvailable: true,
@@ -84,6 +109,7 @@ const projects = [
     sourceAvailable: false,
   },
   {
+    category: "personal",
     id: 6,
     name: "RustMQ",
     summary: "My attempt at porting RSMQ into Rust.",
@@ -94,6 +120,7 @@ const projects = [
     completed: false,
   },
   {
+    category: "personal",
     id: 7,
     name: "Melon",
     summary:
@@ -105,6 +132,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 8,
     name: "Quotation Generator",
     summary:
@@ -117,6 +145,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 8,
     name: "Shadows of Mordor",
     summary: "A turn-based JavaScript board game.",
@@ -135,6 +164,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 9,
     name: "Film Festival",
     summary:
@@ -147,6 +177,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 10,
     name: "Rust Tiny Server",
     summary: "An HTTP web server implementation in Rust",
@@ -158,6 +189,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 11,
     name: "TodoMVC",
     summary: "An MVC todo app",
@@ -180,6 +212,7 @@ const projects = [
     completed: true,
   },
   {
+    category: "personal",
     id: 13,
     name: "Card Checkout Screen",
     summary:
@@ -192,6 +225,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 14,
     name: "Byarent",
     summary:
@@ -204,6 +238,7 @@ const projects = [
     completed: false,
   },
   {
+
     id: 15,
     name: "Developer Circle Kampala Portal",
     summary:
@@ -216,6 +251,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 16,
     name: "WebRTC Video Chat",
     summary:
@@ -228,6 +264,7 @@ const projects = [
     completed: true,
   },
   {
+    category: "personal",
     id: 17,
     name: "Express Food",
     summary:
@@ -239,6 +276,7 @@ const projects = [
     sourceAvailable: true,
   },
   {
+    category: "personal",
     id: 18,
     name: "Personal Website",
     summary:
@@ -251,6 +289,27 @@ const projects = [
     demoAvailable: true,
     sourceAvailable: false,
   },
+    {
+    category: "professional",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 1,
+    name: "Claudia Acham",
+    summary:
+      "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
+    skills: [
+      "Gatsby.js",
+      "Ghost",
+      "E-Commerce",
+      "Adobe XD",
+      "Google Analytics",
+    ],
+    link: "",
+    completed: false,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "https://morning-beach-13124.herokuapp.com/",
+  }
 ]
 
 // an extra challenge, retrieve all of your repositories from the Github API
@@ -263,16 +322,19 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
+      <div className='main'>
+        <div>
       <h1>My Projects</h1>
       <p>Some of the most recent projects that I've worked on.</p>
-      <div className={projectStyles.cloud} />
-      <div className={projectStyles.filter}>
+        <div className={projectStyles.filter}>
         <h3>Filter Projects</h3>
         <ul className={projectStyles.filterOptions}>
           <li>Open Source</li>
           <li>Personal</li>
           <li>Professional</li>
         </ul>
+      </div>
+        </div>
       </div>
       <div className={projectStyles.projectList}>
         {projects.map(project => (

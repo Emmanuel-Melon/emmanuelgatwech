@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { FaArrowRight, FaTwitter, FaGithub, FaMedium, FaLinkedIn } from 'react-icons/fa'
+
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -22,12 +24,13 @@ const IndexPage = () => (
     />
     <div className="content">
       <div>
-        <h1>Emmanuel Daniel</h1>
-        <p>
-          I am a Full-Snack Developer from 🇸🇸South Sudan🇸🇸 Friends call me Eman
+        <h1 className='heading'>Full-Snack Developer</h1>
+        <p className='intro'>
+          Hi there, my name is <span className='orange'>Emmanuel Daniel</span><br />
+          I am a Freelance Developer from 🇸🇸South Sudan🇸🇸, friends call me Eman
           or JunubiMan which literally translates to "Southern Guy".
         </p>
-        <h3>The Beginnings</h3>
+        <h3 className='sub-heading'>My Journey</h3>
         <p>
           I wrote my first "Hello, World" in C on the 12th of September, 2015.{" "}
           <br />
@@ -37,26 +40,33 @@ const IndexPage = () => (
           and I built my very first website; it wasn't so great but that's how I
           fell in love with Web Development.
         </p>
-        <h4>Wanna know more?</h4>
-        <button>
-          <Link to="/projects/">See My Work</Link>
+        <h3 className='sub-heading'>What I do now?</h3>
+        <ul className='me'>
+          <li>Chat Bots</li>
+          <li>Single Web Applications, Landing Pages & Static Websites</li>
+          <li>API Development & Integration</li>
+          <li>WebRTC & Real-Time Applications</li>
+        </ul>
+        <h3 className='sub-heading'>Wanna know more?</h3>
+        <button className='work'>
+          <Link to="/projects/" className='work-link'>See My Work <FaArrowRight /></Link>
         </button>
         <div className="social">
-          <h3>Find Me</h3>
+          <h3 className='sub-heading'>Social Media</h3>
           <ul>
             <li>
               <a href="https://twitter.com/junubiman" target="_blank">
-                Twitter
+                <FaTwitter size='2.5em' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://github.com/Emmanuel-Melon" target="_blank">
-                Github
+                <FaGithub size='2.5em' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://medium.com/@emmanuelgdaniel" target="_blank">
-                Medium
+                <FaMedium size='2.5em' className='icon' />
               </a>
             </li>
           </ul>
