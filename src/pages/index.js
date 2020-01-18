@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { FaArrowRight, FaTwitter, FaGithub, FaMedium, FaLinkedIn } from 'react-icons/fa'
+import { FaArrowRight, FaTwitter, FaGithub, FaMedium } from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
@@ -48,11 +48,13 @@ const IndexPage = () => (
           <li>WebRTC & Real-Time Applications</li>
         </ul>
         <h3 className='sub-heading'>Wanna know more?</h3>
+        <p>A collection of some my favorite projects.</p>
         <button className='work'>
           <Link to="/projects/" className='work-link'>See My Work <FaArrowRight /></Link>
         </button>
         <div className="social">
           <h3 className='sub-heading'>Social Media</h3>
+          <p>If you wanna reach out</p>
           <ul>
             <li>
               <a href="https://twitter.com/junubiman" target="_blank">

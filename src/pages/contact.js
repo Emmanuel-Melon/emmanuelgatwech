@@ -18,7 +18,6 @@ const ContactPage = () => {
       </div>
       <div className={contactStyles.content}>
         <div className={contactStyles.leftPane}>
-          <h3 className='sub-heading'>Leave a Message</h3>
           <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb">
             <div className={contactStyles.user}>
                 <label className={contactStyles.label}>
@@ -27,7 +26,7 @@ const ContactPage = () => {
                 </label>
                 <label className={contactStyles.label}>
                   Email
-                  <input type="text" placeholder="Email Address"  id="Email Address" name="_replyto"/>
+                  <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto"/>
                 </label>
             </div>
             <div>
