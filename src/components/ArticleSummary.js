@@ -13,7 +13,6 @@ const ArticleSummary = ({ article }) => {
       </Link>
       </h3>
       <h5>{article.subtitle}</h5>
-      <p>{Moment(Date.now()).calendar()}</p>
       <p>{article.summary}</p>
       <ul className={styles.tags}>
       { article.tags.map(tag => {

@@ -14,12 +14,13 @@
   height: 120px;
   border: 2px solid #cccccc;
   padding: 10px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
-.user input[type="text"], .subject {
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
+.user input[type="text"], .user input[type="email"], .subject {
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  width: 350px;
   outline: none;
   border: 2px solid #cccccc;
   padding: 10px;
@@ -30,9 +31,11 @@
   flex-direction: column;
 }
 .form {
-  width: 300px;
+  margin: 0;
 
-  &:label {
-    color: red;
-  }
 }
+
+
+.form label {
+    color: #f83600;
+  }
