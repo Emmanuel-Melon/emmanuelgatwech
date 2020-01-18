@@ -34,6 +34,7 @@ const ProjectSummary = ({ project }) => {
             </button>
           ) : null}
         </div>
+
         <div className={projectStyles.skillList}>
           {project.skills.map(skill => (
             <a className={projectStyles.skill}>{skill}</a>
