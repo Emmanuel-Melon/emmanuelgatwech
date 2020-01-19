@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Eman`,
-    description: `Full-Stack Software Developer from South Sudan with an extensive experience in React/Node. Based in Kampala, Uganda.`,
+    description: `Full-Stack Software Developer with an extensive experience in building fast, scalable & user friendly apps.`,
     author: `Emmanuel-Melon`,
   },
   plugins: [

@@ -34,9 +34,9 @@ const IndexPage = () => (
       <div>
         <h1 className='heading'>Full-Snack Developer</h1>
         <p className='intro'>
-          Hi there, my name is Emmanuel Daniel<br />
           I am a Freelance Developer from 🇸🇸South Sudan🇸🇸, friends call me Eman
-          or JunubiMan which literally translates to "Southern Guy".
+          or JunubiMan which literally translates to "Southern Guy". <br />
+          I like jogging, video games & playing chess.
         </p>
         <h3 className='sub-heading'>About Me</h3>
         <p>

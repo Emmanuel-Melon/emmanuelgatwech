@@ -14,20 +14,20 @@ const ProjectSummary = ({ project }) => {
         <p>{project.summary}</p>
         <div className="options">
           { project.demoAvailable ? (
-            <button>
+            <button className={projectStyles.button}>
               <a href={project.demo} target="_blank">
                 View Demo
               </a>
             </button>
           ) : (
-            <button>
+            <button className={projectStyles.button}>
               <a href={project.demo} target="_blank">
                 Request Demo
               </a>
             </button>
           )}
           { project.sourceAvailable ? (
-            <button>
+            <button className={projectStyles.button}>
               <a href={project.code} target="_blank">
                 Source Code
               </a>

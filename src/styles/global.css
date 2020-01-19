@@ -1,8 +1,8 @@
 html,
 body {
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/xv.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: rgba(0, 0, 0, 1);
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 color: #fff;
   font-size: 18px;
 
@@ -163,7 +163,7 @@ button:hover {
 
 
 .intro {
-
+  text-align: center;
 }
 
 .options {

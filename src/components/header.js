@@ -34,11 +34,6 @@ const Navbrand = styled.h1`
 
 const Hamburger = styled.div`
   display: none;
-  @media (max-width: 320px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 `
 
 
@@ -68,17 +63,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </Navbrand>
       <Nav>
-        <Navlist>
-          <li><AniLink to="/projects/"> Projects</AniLink></li>
-          <li><Link to="/blog/">Blog</Link></li>
-          <li><Link to="/contact/">Contact</Link></li>
-          <li><Link to="/talks/">Talks</Link></li>
-          <li><Link to="/resume/">Resume</Link></li>
-        </Navlist>
+        <AniLink to="/projects/"> Projects</AniLink>
+         <Link to="/blog/">Blog</Link>
+          <Link to="/contact/">Contact</Link>
+          <Link to="/talks/">Talks</Link>
       </Nav>
-      <Hamburger>
-        <FaBars size='1.5rem' />
-      </Hamburger>
     </div>
   </Head>
 )
