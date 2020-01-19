@@ -9,6 +9,7 @@ const Head = styled.header`
     background: rgb(14,4,1);
   background: linear-gradient(9deg, rgba(14,4,1,0.8) 0%, rgba(46,17,8,0.8) 35%, rgba(24,5,1,0.8) 100%);
   margin-bottom: 1.5em;
+  padding: 1rem;
  
 `
 
@@ -40,6 +41,8 @@ const Header = ({ siteTitle }) => (
         <AniLink to="/projects/"> Projects</AniLink>
         <Link to="/blog/">Blog</Link>
         <Link to="/contact/">Contact</Link>
+        <Link to="/talks/">Talks</Link>
+        <Link to="/resume/">Resume</Link>
       </div>
     </div>
   </Head>
