@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 
@@ -38,7 +39,7 @@
   flex-direction: column;
 }
 .form {
-  margin: 0 auto;
+  padding: 0;
 }
 
 
@@ -49,7 +50,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
   .form {
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .user {
@@ -82,7 +84,8 @@
 @media (min-width: 1024px) {
 
   .form {
-    margin: 0 auto;
+    width: 100%;
+    padding: 0.5rem;
   }
 
   .user {
@@ -115,7 +118,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .form {
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .user {

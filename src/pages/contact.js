@@ -19,7 +19,6 @@ const ContactPage = () => {
       </p></div>
       </div>
       <div className={contactStyles.content}>
-        <div className={contactStyles.leftPane}>
           <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb">
             <div className={contactStyles.user}>
                 <label className={contactStyles.label}>
@@ -43,7 +42,6 @@ const ContactPage = () => {
             </div>
             <button type="submit" className='work'>Send</button>
           </form>
-        </div>
       </div>
     </Layout>
   )
