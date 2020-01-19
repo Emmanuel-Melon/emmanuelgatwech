@@ -34,7 +34,7 @@ const IndexPage = () => (
       <div>
         <h1 className='heading'>Full-Snack Developer</h1>
         <p className='intro'>
-          I am a Freelance Developer from 🇸🇸South Sudan🇸🇸, friends call me Eman
+          I'm a Software Developer from South Sudan, friends call me Eman
           or JunubiMan which literally translates to "Southern Guy". <br />
           I like jogging, video games & playing chess.
         </p>
