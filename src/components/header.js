@@ -11,18 +11,20 @@ const Head = styled.header`
   background: rgb(14,4,1);
   background: linear-gradient(9deg, rgba(14,4,1,0.8) 0%, rgba(46,17,8,0.8) 35%, rgba(24,5,1,0.8) 100%);
   margin-bottom: 1.5em;
-  padding: 1rem;
-  
-  @media (min-width: 320px) and (max-width: 768px) {
-  & ul {
-    list-style-type: none;
-    & li {
-      
-    }
-  }
-  }
- 
+  padding: 0.5rem;
 `
+
+const Nav = styled.nav`
+    & ul {
+    list-style-type: none;
+  }
+`
+
+const Navlist = styled.ul`
+  display: flex; 
+  align-items: center;
+`
+
 
 const Navbrand = styled.h1`
   & a {
@@ -65,15 +67,15 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </Navbrand>
-      <nav>
-        <ul style={{ display: `flex`, alignItems: `center` }}>
+      <Nav>
+        <Navlist>
           <li><AniLink to="/projects/"> Projects</AniLink></li>
           <li><Link to="/blog/">Blog</Link></li>
           <li><Link to="/contact/">Contact</Link></li>
           <li><Link to="/talks/">Talks</Link></li>
           <li><Link to="/resume/">Resume</Link></li>
-        </ul>
-      </nav>
+        </Navlist>
+      </Nav>
       <Hamburger>
         <FaBars size='1.5rem' />
       </Hamburger>

@@ -19,3 +19,5 @@ A personal website showcasing my development skills for potential clients and em
 - [ ] Add Images
 
 what is debouncing?
+relaying http requests to minimize network operations and to increase performance.
+what is a div soup?
