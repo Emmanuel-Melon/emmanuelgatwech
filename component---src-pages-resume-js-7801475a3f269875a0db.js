@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{F2CN:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Bl7J"),r=a("vrFN");a("BtT6");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(r.a,{title:"Projects",keywords:["gatsby","application","react"]}),l.a.createElement("div",{className:"main"},l.a.createElement("div",null,l.a.createElement("h1",null,"My Resume"),l.a.createElement("p",null,"COMING SOON!"))))}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-7801475a3f269875a0db.js.map
