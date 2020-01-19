@@ -32,10 +32,6 @@ const ContactPage = () => {
             </div>
             <div>
               <label className={contactStyles.label}>
-                Subject
-                <input type="text" placeholder="Subject" id="subject" className={contactStyles.subject} name="subject" />
-              </label>
-              <label className={contactStyles.label}>
                 Message
                 <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" />
               </label>
