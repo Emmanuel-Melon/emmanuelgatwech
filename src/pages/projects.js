@@ -322,16 +322,10 @@ const ProjectsPage = () => {
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <div className='main'>
         <div>
-      <h1>My Projects</h1>
+      <h1 className='sub-heading'>My Projects</h1>
       <p>Some of the most recent projects that I've worked on.</p>
         <div className={projectStyles.filter}>
-        <h3>Filter Projects</h3>
-        <ul className={projectStyles.filterOptions}>
-          <li>Open Source</li>
-          <li>Personal</li>
-          <li>Professional</li>
-        </ul>
-      </div>
+        </div>
         </div>
       </div>
       <div className={projectStyles.projectList}>

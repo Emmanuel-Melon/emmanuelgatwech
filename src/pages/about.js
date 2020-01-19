@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>About Me</h1>
+      <h1 className='sub-heading'>About Me</h1>
       <p>
         I am a Full-Snack Developer from 🇸🇸South Sudan🇸🇸
         <br /> Friends call me Eman or JunubiMan which literally translates to

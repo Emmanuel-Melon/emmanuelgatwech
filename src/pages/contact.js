@@ -13,7 +13,7 @@ const ContactPage = () => {
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <div className='main'>
         <div>
-              <h1>Contact Me</h1>
+              <h1 className='sub-heading'>Contact Me</h1>
       <p>
         Let's have a little chat
       </p></div>

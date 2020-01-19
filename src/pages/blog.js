@@ -22,7 +22,7 @@ const BlogPage = () => {
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <div className='main'>
       <div>
-      <h1>My Blog</h1>
+      <h1 className='sub-heading'>My Blog</h1>
       <p>
         Where I share my experiences and my thoughts
       </p>

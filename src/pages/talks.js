@@ -10,7 +10,7 @@ const TalkPage = () => {
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
       <div className='main'>
         <div>
-          <h1>My Talks</h1>
+          <h1 className='sub-heading'>My Talks</h1>
           <p>COMING SOON!</p>
         </div>
       </div>

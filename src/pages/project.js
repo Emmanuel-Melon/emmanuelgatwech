@@ -7,7 +7,7 @@ const ProjectPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>Project</h1>
+      <h1 className='sub-heading'>Project</h1>
       <p>
         I am a Full-Snack Developer from 🇸🇸South Sudan🇸🇸
         <br /> Friends call me Eman or JunubiMan which literally translates to
