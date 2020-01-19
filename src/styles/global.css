@@ -67,9 +67,13 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
-  color: #f83600;
+  color: #fff;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+a:hover {
+  color: #f83600;
 }
 
 img {
@@ -134,6 +138,20 @@ button:hover {
   color: #f83600;
 }
 
+.sub-heading:after {
+  display: block;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  padding: 0.1em;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.sub-heading:after {
+  margin-top: 0.2rem;
+}
+
 .heading:before, .heading:after {
     display: block;
     content: "";
@@ -141,6 +159,7 @@ button:hover {
     width: 15%;
     padding: 0.1em;
     margin: 0.5em;
+    border-radius: 0.5rem;
     background-image: linear-gradient(to right, #f83600 30%, #f9d423 70%);
 }
 
@@ -150,6 +169,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: #f9d423;
+  border-radius: 0.5rem;
 }
 
 .work-link {
@@ -159,6 +179,21 @@ button:hover {
 .me {
   list-style-type: lower-greek;
   list-style-position: outside;
+  text-decoration: underline;
+}
+
+.offer {
+  background: rgb(14,4,1);
+  background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+  color: #fff;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-bottom: solid 0.2em #f83600;
+  border-radius: 0.5rem;
+}
+
+.me:hover {
+  cursor: pointer;
 }
 
 
