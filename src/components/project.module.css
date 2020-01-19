@@ -29,10 +29,12 @@
 
 @media (min-width: 1024px) {
   .project {
+    background: rgb(14,4,1);
+    background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
     -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-tl 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    border-bottom: solid 0.2em #333;
-    background: #fff;
+    border-bottom: solid 0.2em #f83600;
+    color: #ffffff;
     width: 49%;
     margin: 0.2em;
     display: flex;
