@@ -18,6 +18,10 @@ const Nav = styled.nav`
     & ul {
     list-style-type: none;
   }
+  
+  & a {
+    margin-right: 1rem;
+  }
 `
 
 const Navlist = styled.ul`
@@ -28,7 +32,9 @@ const Navlist = styled.ul`
 
 const Navbrand = styled.h1`
   & a {
-    
+    color: #fff;
+    font-size: 1.5rem;
+    transform: rotate(90deg);
   }
 `
 
@@ -55,7 +61,6 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `#f83600`,
             textDecoration: `underline`,
           }}
         >

@@ -63,7 +63,6 @@ p {
 }
 
 a {
-  margin-right: 1em;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
@@ -255,11 +254,13 @@ button:hover {
 }
 
 .social ul {
+  margin: 0;
   list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .social ul li {
-  display: inline;
   padding: 0.5em;
   max-width: 40px;
   margin: 0.5em;

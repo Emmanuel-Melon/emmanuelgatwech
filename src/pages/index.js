@@ -66,32 +66,27 @@ const IndexPage = () => (
           <ul>
             <li>
               <a href="https://twitter.com/junubiman" target="_blank">
-                <FaTwitter size='2rem' className='icon' />
+                <FaTwitter size='1.5rem' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://github.com/Emmanuel-Melon" target="_blank">
-                <FaGithubAlt size='2rem' className='icon' />
+                <FaGithubAlt size='1.5rem' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://medium.com/@emmanuelgdaniel" target="_blank">
-                <FaMediumM size='2rem' className='icon' />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/emmanuel-gatwech/" target="_blank">
-                <FaLinkedinIn size='2rem' className='icon' />
+                <FaMediumM size='1.5rem' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://stackoverflow.com/users/6583352/emmanuel-gabriel" target="_blank">
-                <FaStackOverflow size='2rem' className='icon' />
+                <FaStackOverflow size='1.5rem' className='icon' />
               </a>
             </li>
             <li>
               <a href="https://dev.to/junubiman" target="_blank">
-                <FaDev size='2rem' className='icon' />
+                <FaDev size='1.5rem' className='icon' />
               </a>
             </li>
           </ul>
