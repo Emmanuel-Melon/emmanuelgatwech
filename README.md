@@ -24,6 +24,9 @@ A personal website showcasing my development skills for potential clients and em
 - [ ] Add Social Preview for posts & website.
 - [ ] Improve Content
 - [ ] Fix after click scale effect, reduce to normal size.
+- [ ] Fix form inputs on large screens
+- [ ] Only show 10 projects at a time, then paginate the rest
+- [ ] Skeletons for asynchronous data
 - [ ] Add description pages for reach service, how long it'd take to provide, tools used & other information.
 
 what is debouncing?
