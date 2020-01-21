@@ -1,11 +1,10 @@
 html,
 body {
-background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
   background-image: url("https://www.transparenttextures.com/patterns/xv.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-color: #fff;
+  color: #fff;
   font-size: 18px;
-
 }
 
 /* typography */
@@ -15,9 +14,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Audiowide", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-weight: 700;
+  font-family: "Audiowide", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 700;
 }
 
 h1:after {
@@ -30,36 +29,35 @@ h1:after {
 
 h1 {
   font-size: 2rem;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 h2 {
   font-size: 2rem;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 h3 {
   font-size: 1.5rem;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-
 
 p,
 a,
 span,
-li
-
-{
+li {
   font-family: "Dosis", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
 }
 
 p {
-
 }
 
 a {
@@ -67,8 +65,9 @@ a {
   transition: all 0.3s ease-in-out;
   font-weight: bold;
   color: #fff;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 a:hover {
@@ -84,7 +83,7 @@ button {
   padding: 0.5em;
   background: transparent;
   width: 48%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
@@ -93,8 +92,13 @@ button:hover {
 }
 
 .content {
-  background: rgb(14,4,1);
-  background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+    9deg,
+    rgba(14, 4, 1, 0.5) 0%,
+    rgba(46, 17, 8, 0.5) 35%,
+    rgba(24, 5, 1, 0.5) 100%
+  );
   color: #fff;
   padding: 2.5em;
   display: flex;
@@ -104,8 +108,13 @@ button:hover {
 }
 
 .main {
-  background: rgb(14,4,1);
-  background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+    9deg,
+    rgba(14, 4, 1, 0.5) 0%,
+    rgba(46, 17, 8, 0.5) 35%,
+    rgba(24, 5, 1, 0.5) 100%
+  );
   color: #fff;
   display: flex;
   width: 100%;
@@ -121,11 +130,13 @@ button:hover {
 .heading {
   padding: 1rem;
   margin: 0 auto;
-    display: flex;
-    align-items: center;
-    width: 95%;
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .orange {
@@ -137,6 +148,21 @@ button:hover {
   color: #f83600;
 }
 
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  max-width: 300px;
+}
+
+.myImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transform: rotate(-2deg);
+  border: solid 0.3rem #ff3737;
+}
 .sub-heading:after {
   display: block;
   content: "";
@@ -151,15 +177,16 @@ button:hover {
   margin-top: 0.2rem;
 }
 
-.heading:before, .heading:after {
-    display: block;
-    content: "";
-    height: 0.2rem;
-    width: 15%;
-    padding: 0.1em;
-    margin: 0.5em;
-    border-radius: 0.5rem;
-    background-image: linear-gradient(to right, #f83600 30%, #f9d423 70%);
+.heading:before,
+.heading:after {
+  display: block;
+  content: "";
+  height: 0.2rem;
+  width: 15%;
+  padding: 0.1em;
+  margin: 0.5em;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #f83600 30%, #f9d423 70%);
 }
 
 .work {
@@ -172,7 +199,7 @@ button:hover {
 }
 
 .work-link {
-    color: #f9d423;
+  color: #f9d423;
 }
 
 .me {
@@ -182,8 +209,13 @@ button:hover {
 }
 
 .offer {
-  background: rgb(14,4,1);
-  background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+    9deg,
+    rgba(14, 4, 1, 0.5) 0%,
+    rgba(46, 17, 8, 0.5) 35%,
+    rgba(24, 5, 1, 0.5) 100%
+  );
   color: #fff;
   padding: 1em;
   margin-bottom: 0.5em;
@@ -195,9 +227,29 @@ button:hover {
   cursor: pointer;
 }
 
-
 .intro {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.intro p {
+
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+          9deg,
+          rgba(14, 4, 1, 0.5) 0%,
+          rgba(46, 17, 8, 0.5) 35%,
+          rgba(24, 5, 1, 0.5) 100%
+  );
+  -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  border-left: solid 0.2em #f83600;
+  color: #ffffff;
+  display: flex;
+  padding: 0.8rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .options {
@@ -222,7 +274,6 @@ button:hover {
   flex: 1;
 }
 
-
 .right {
   flex: 2;
 }
@@ -233,7 +284,7 @@ button:hover {
 
 .icon {
   color: #fff;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon:hover {
@@ -281,32 +332,66 @@ span {
   color: #ff3737;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  html, body {
+@media (min-width: 320px) and (max-width: 768px) {
+  html,
+  body {
     font-size: 14px;
   }
-  main, .content {
-    padding: 0.8rem;
+  main,
+  .content {
+    padding: 1rem;
     margin-bottom: 2em;
   }
 
   h1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .heading:before,
+  .heading:after {
+    display: block;
+    content: "";
+    height: 0.2rem;
+    width: 8%;
+    padding: 0.1em;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, #f83600 30%, #f9d423 70%);
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin: 0 auto;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
   }
 }
 
+@media (max-width: 320px) {
+  h1 {
+    display: none;
+  }
+}
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  html, body {
+@media (min-width: 480px) and (max-width: 1024px) {
+  html,
+  body {
     font-size: 16px;
   }
-  main, .content {
-    padding: 0.8rem;
+  main,
+  .content {
+    padding: 1rem;
     margin-bottom: 2em;
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -315,9 +400,8 @@ main {
 }
 
 .content {
-  padding: 0.8rem;
+  padding: 1rem;
 }
-
 
 /* ----------------------------------------------
  * Generated by Animista on 2020-1-18 21:52:46
@@ -354,4 +438,8 @@ main {
   100% {
     opacity: 1;
   }
+}
+
+.body {
+  padding: 1.5rem;
 }

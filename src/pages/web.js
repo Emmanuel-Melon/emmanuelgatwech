@@ -8,23 +8,29 @@ const WebPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <div className='main'>
+      <div className="main">
         <div>
-          <h1 className='sub-heading'>
-            Web Development
-          </h1>
+          <h1 className="sub-heading">Mobile &amp; Web Development</h1>
           <p>I build stunning mobile & web apps.</p>
         </div>
       </div>
-      <div className='offer'>
-      <div>
-        <h3 className='sub-heading'>Single Page Applications</h3>
-        <p>Details coming soon!</p>
-      </div>
-      <div>
-        <h3 className='sub-heading'>Static Websites &amp; Landing Pages</h3>
-        <p>Details coming soon!</p>
-      </div>
+      <div className="offer">
+        <div>
+          <h3 className="sub-heading">Single Page Applications</h3>
+          <p>Details coming soon!</p>
+        </div>
+        <div>
+          <h3 className="sub-heading">Admin Dashboards</h3>
+          <p>Details coming soon!</p>
+        </div>
+        <div>
+          <h3 className="sub-heading">React Native Android &amp; iOS apps. </h3>
+          <p>Details coming soon!</p>
+        </div>
+        <div>
+          <h3 className="sub-heading">Static Websites &amp; Landing Pages</h3>
+          <p>Details coming soon!</p>
+        </div>
       </div>
     </Layout>
   )
