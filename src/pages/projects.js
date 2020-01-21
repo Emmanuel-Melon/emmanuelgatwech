@@ -35,7 +35,7 @@ const projects = [
     demoAvailable: true,
     sourceAvailable: false,
     id: 1,
-    name: "Style Bites",
+    name: "Claudia Acham",
     summary:
       "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
     skills: [
@@ -48,7 +48,7 @@ const projects = [
     completed: false,
     started: "November",
     code: "https://github.com/Emmanuel-Melon/la-revue",
-    demo: "https://morning-beach-13124.herokuapp.com/",
+    demo: "https://emmanuel-melon.github.io/style-bites/",
   },
   {
     category: "professional",
@@ -90,7 +90,7 @@ const projects = [
       "A distributed key/value store database inspired by Cassandra's architecture",
     skills: ["Rust", "Distributed Systems", "Key/Value", "Consistent Hashing"],
     code: "https://github.com/Emmanuel-Melon/ney_db",
-    demoAvailable: true,
+    demoAvailable: false,
     sourceAvailable: true,
     completed: false,
   },
@@ -114,7 +114,7 @@ const projects = [
     summary: "My attempt at porting RSMQ into Rust.",
     skills: ["Rust", "Redis", "Message Queue"],
     code: "https://github.com/Emmanuel-Melon/rust_rsmq",
-    demoAvailable: true,
+    demoAvailable: false,
     sourceAvailable: true,
     completed: false,
   },
@@ -126,7 +126,7 @@ const projects = [
       "A tiny compiler that supports static typing and Object Oriented Programming. It's based on COOL and is written in C++.",
     skills: ["C++", "Compilers", "Algorithms", "COOL", "OOP"],
     code: "https://github.com/Emmanuel-Melon/melon",
-    demoAvailable: true,
+    demoAvailable: false,
     completed: false,
     sourceAvailable: true,
   },
@@ -183,7 +183,7 @@ const projects = [
     skills: ["Rust", "http", "tcp"],
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "https://morning-beach-13124.herokuapp.com/",
-    demoAvailable: true,
+    demoAvailable: false,
     completed: false,
     sourceAvailable: true,
   },
@@ -281,33 +281,13 @@ const projects = [
     summary:
       "My own personal website and portfolio. Built using Gatsby.js and GraphQL",
     skills: ["GraphQL", "GatsbyJS", "UX/UI", "Adobe XD"],
-    code: "https://github.com/Emmanuel-Melon/la-revue",
-    demo: "https://morning-beach-13124.herokuapp.com/",
+    code: "http://emmanuelgatwech.me",
     private: true,
     completed: true,
     demoAvailable: true,
     sourceAvailable: false,
   },
-    {
-    category: "professional",
-    demoAvailable: true,
-    sourceAvailable: false,
-    id: 20,
-    name: "Claudia Acham",
-    summary:
-      "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
-    skills: [
-      "Gatsby.js",
-      "Ghost",
-      "E-Commerce",
-      "Adobe XD",
-    ],
-    link: "",
-    completed: false,
-    started: "November",
-    code: "https://github.com/Emmanuel-Melon/la-revue",
-    demo: "https://morning-beach-13124.herokuapp.com/",
-  }
+
 ]
 
 // an extra challenge, retrieve all of your repositories from the Github API
