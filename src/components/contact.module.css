@@ -11,14 +11,14 @@
 }
 
 .message {
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  width: 95%;
   outline: none;
-  resize: none;
-  width: 80%;
-  height: 120px;
   border: 2px solid #cccccc;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.5rem;
+  padding: 10px;
+  background: rgba(14, 4, 5, 0.5);
+  color: #fff;
 }
 
 .user input[type="text"], .user input[type="email"], .subject {
@@ -28,7 +28,8 @@
   outline: none;
   border: 2px solid #cccccc;
   padding: 10px;
-  border-radius: 0.5rem;
+  background: rgba(14, 4, 5, 0.5);
+  color: #fff;
 }
 
 .invalid {
@@ -44,6 +45,37 @@
   padding: 0;
 }
 
+.submit {
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+          9deg,
+          rgba(14, 4, 1, 0.5) 0%,
+          rgba(46, 17, 8, 0.5) 35%,
+          rgba(24, 5, 1, 0.5) 100%
+  );
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #f83600;
+  color: #f83600;
+}
+
+.text {
+  background: rgb(14, 4, 1);
+  background: linear-gradient(
+          9deg,
+          rgba(14, 4, 1, 0.5) 0%,
+          rgba(46, 17, 8, 0.5) 35%,
+          rgba(24, 5, 1, 0.5) 100%
+  );
+  width: 80px;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #f83600;
+}
 
 .form label {
     color: #f83600;

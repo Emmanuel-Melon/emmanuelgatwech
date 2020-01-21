@@ -22,21 +22,21 @@ const ContactPage = () => {
           <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb">
             <div className={contactStyles.user}>
                 <label className={contactStyles.label}>
-                  Name
+                  <span className={contactStyles.text}>Name</span>
                   <input type="text" placeholder="Name" id="Name" name="name" />
                 </label>
                 <label className={contactStyles.label}>
-                  Email
+                  <span className={contactStyles.text}>Email</span>
                   <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto"/>
                 </label>
             </div>
             <div>
               <label className={contactStyles.label}>
-                Message
+                <span className={contactStyles.text}>Message</span>
                 <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" />
               </label>
             </div>
-            <button type="submit" className='work'>Send</button>
+            <button type="submit" className={contactStyles.submit}>Send</button>
           </form>
       </div>
     </Layout>
@@ -44,3 +44,5 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+// use form labels to indicate validity status of inputs and have them light up green or red
