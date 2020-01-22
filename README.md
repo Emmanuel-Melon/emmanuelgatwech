@@ -32,3 +32,9 @@ A personal website showcasing my development skills for potential clients and em
 what is debouncing?
 relaying http requests to minimize network operations and to increase performance.
 what is a div soup?
+
+
+- Can't wait for an actual email?
+- you could call me on?
+- Check out my awesome messenger Bot.
+- integrate messenger bot on my website?
