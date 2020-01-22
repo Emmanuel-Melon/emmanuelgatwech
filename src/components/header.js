@@ -8,10 +8,8 @@ import { FaBars } from 'react-icons/fa'
 import styled from 'styled-components'
 
 const Head = styled.header`
-  background: rgb(14,4,1);
-  background: linear-gradient(9deg, rgba(14,4,1,0.8) 0%, rgba(46,17,8,0.8) 35%, rgba(24,5,1,0.8) 100%);
+background: rgba(14, 4, 5, 0.5);
   margin-bottom: 1.5em;
-  padding: 0.5rem;
 `
 
 const Nav = styled.nav`
@@ -30,7 +28,7 @@ const Navlist = styled.ul`
 `
 
 
-const Navbrand = styled.h1`
+const Navbrand = styled.h3`
   & a {
     color: #fff;
     font-size: 1.5rem;
@@ -51,9 +49,10 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1rem`,
+        padding: `0.8rem`,
         display: `flex`,
         justifyContent: `space-between`,
+        alignItems: 'center',
         color: `#f83600`,
       }}
     >
