@@ -162,7 +162,7 @@ button:hover {
   border-radius: 0.2rem;
   transform: rotate(-4deg);
   border: 0.3rem #f83600;
-  border-style: dashed solid;
+  border-style: solid;
 }
 .sub-heading:after {
   display: block;
@@ -442,5 +442,5 @@ main {
 }
 
 .body {
-  padding: 1.5rem;
+  padding: 1rem;
 }
