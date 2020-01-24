@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js'),
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
