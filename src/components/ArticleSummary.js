@@ -6,11 +6,9 @@ import { Link } from "gatsby"
 const ArticleSummary = ({ article }) => {
   return (
     <div className={styles.articleSummary}>
+      <Link to={`/blog/${article.id}`}>
       <h3 className={styles.title}>
-        <Link to={`/blog/${article.id}`}>
-          #{article.id} -
-        {article.title}
-      </Link>
+          #{article.id} - {article.title}
       </h3>
       <h5>{article.subtitle}</h5>
       <p>{article.summary}</p>
@@ -19,6 +17,7 @@ const ArticleSummary = ({ article }) => {
         return <li className={styles.tag}>{tag}</li>
       })}
       </ul>
+    </Link>
     </div>
   )
 }

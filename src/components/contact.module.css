@@ -124,17 +124,27 @@
 
   .user {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .user input[type="text"], .user input[type="email"], .subject {
-    margin-right: 1.5em;
+  .invalid {
     margin-bottom: 1.5em;
     width: 100%;
     outline: none;
     border: 2px solid #cccccc;
     padding: 10px;
-    min-width: 310px;
+    min-width: 440px;
+    background: red;
+  }
+
+  .user input[type="text"], .user input[type="email"], .subject {
+    margin-bottom: 1.5em;
+    width: 100%;
+    outline: none;
+    border: 2px solid #cccccc;
+    padding: 10px;
+    min-width: 440px;
   }
 
   .message {

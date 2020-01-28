@@ -1,6 +1,7 @@
+
+
 .articleSummary {
-    background: rgb(14,4,1);
-    background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+    background: rgba(14, 4, 5, 0.5);
     color: #fff;
     padding: 1em;
     margin-bottom: 0.5em;
@@ -9,8 +10,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .articleSummary {
-        background: rgb(14,4,1);
-        background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
+        background: rgba(14, 4, 5, 0.5);
         color: #fff;
         padding: 1em;
         margin-bottom: 0.5em;
@@ -20,12 +20,15 @@
 
 @media (min-width: 1024px) {
     .articleSummary {
-        background: rgb(14,4,1);
-        background: linear-gradient(9deg, rgba(14,4,1,0.5) 0%, rgba(46,17,8,0.5) 35%, rgba(24,5,1,0.5) 100%);
-        color: #fff;
+        background: rgba(14, 4, 5, 0.5);
         padding: 1em;
         margin-bottom: 0.5em;
         border-bottom: solid 0.2em #f83600;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        color: red;
     }
 }
 

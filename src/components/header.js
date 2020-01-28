@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 const Head = styled.header`
 background: rgba(14, 4, 5, 0.5);
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 `
 
 const Nav = styled.nav`
@@ -21,12 +21,6 @@ const Nav = styled.nav`
     margin-right: 1rem;
   }
 `
-
-const Navlist = styled.ul`
-  display: flex; 
-  align-items: center;
-`
-
 
 const Navbrand = styled.h3`
   & a {
@@ -41,21 +35,22 @@ const Hamburger = styled.div`
 `
 
 
+const Navbar = styled.div`
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        color: #f83600;
+`
+
 
 const Header = ({ siteTitle }) => (
   <Head
+    title={siteTitle}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0.8rem`,
-        display: `flex`,
-        justifyContent: `space-between`,
-        alignItems: 'center',
-        color: `#f83600`,
-      }}
-    >
+    <Navbar>
       <Navbrand style={{ margin: 0 }}>
         <Link
           to="/"
@@ -72,7 +67,7 @@ const Header = ({ siteTitle }) => (
           <Link to="/contact/">Contact</Link>
           <Link to="/talks/">Talks</Link>
       </Nav>
-    </div>
+    </Navbar><title></title>
   </Head>
 )
 
@@ -81,7 +76,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Eman`,
 }
 
 export default Header

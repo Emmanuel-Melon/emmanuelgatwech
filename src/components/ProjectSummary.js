@@ -8,8 +8,7 @@ const ProjectSummary = ({ project }) => {
     <div className={projectStyles.project}>
       <div>
         <h3 className={projectStyles.title}>
-          #{project.id} - {project.name}{" "}
-          {!project.completed ? <span>(Work in Progress)</span> : null}
+          #{project.id} - {project.name} {!project.completed ? <span>(Work in Progress)</span> : null}
         </h3>
         <p>{project.summary}</p>
         <div className="options">
