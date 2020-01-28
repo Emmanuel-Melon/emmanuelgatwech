@@ -55,15 +55,12 @@ li {
   font-family: "Dosis", Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
-}
-
-p {
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  font-weight: bold;
   color: #fff;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
@@ -161,8 +158,7 @@ button:hover {
   height: auto;
   border-radius: 0.2rem;
   transform: rotate(-4deg);
-  border: 0.3rem #f83600;
-  border-style: solid;
+  border: 0.2rem dashed #f83600;
 }
 .sub-heading:after {
   display: block;
@@ -210,18 +206,11 @@ button:hover {
 }
 
 .offer {
-  background: rgb(14, 4, 1);
-  background: linear-gradient(
-    9deg,
-    rgba(14, 4, 1, 0.5) 0%,
-    rgba(46, 17, 8, 0.5) 35%,
-    rgba(24, 5, 1, 0.5) 100%
-  );
+  background: rgba(14, 4, 5, 0.5);
   color: #fff;
   padding: 1em;
   margin-bottom: 0.5em;
   border-bottom: solid 0.2em #f83600;
-  border-radius: 0.5rem;
 }
 
 .me:hover {
@@ -290,7 +279,7 @@ button:hover {
 
 .icon:hover {
   cursor: pointer;
-  color: #f83600;
+  color: #f9d423;
   transform: scale(1.2);
 }
 
@@ -443,4 +432,8 @@ main {
 
 .body {
   padding: 1rem;
+}
+
+.invalid {
+  color: red;
 }
