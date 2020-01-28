@@ -37,12 +37,13 @@ const projects = [
     id: 1,
     name: "Claudia Acham",
     summary:
-      "A website for an interior design start up in Juba, South Sudan. It allows users to browse and make orders on various listings.",
+      "A website for a Nairobi based South Sudanese Makeup Artist where she lists services, manage bookings and appointments and sells makeup kits.",
     skills: [
       "Gatsby.js",
-      "Ghost",
+      "GraphQL",
       "E-Commerce",
       "Adobe XD",
+      "MongoDB"
     ],
     link: "",
     completed: false,

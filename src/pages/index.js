@@ -32,14 +32,14 @@ const IndexPage = () => (
     />
     <div className="content">
       <div>
-        <h1 className="heading">Full-Snack Developer</h1>
+        <h1 className="heading">Software Developer</h1>
         <div className='profile'>
           <div className='profile-image'>
             <img src='https://pbs.twimg.com/profile_images/1178793207418757120/tNrpT5qa_400x400.jpg' alt='damn' className='myImage'/>
           </div>
           <div className="intro">
             <p>
-              I'm a Software Developer from South Sudan, friends call me Eman or
+              Hi, my name is Emmanuel Daniel & I'm a Software Developer from South Sudan, friends call me Eman or
               JunubiMan which literally translates to "Southern Guy". <br />I like
               jogging, video games & playing chess.
             </p>
@@ -48,10 +48,9 @@ const IndexPage = () => (
         <div className='body'>
           <h3 className="sub-heading">About Me</h3>
           <p>
-            I wrote my first "Hello, World" in C on the 12th of September, 2015.{" "}
-            <br />
-            This was followed by a very long journey of making mistakes and
-            learning from them to continuously growing to where I am at today.
+            I specialize in building and integrating APIs, web and mobile applications development using React and React Native and chatbots. <br />
+            Some of my other interests include: Machine Learning, Distributed Systems &amp; Compilers. <br />
+            I am also practicing to become a junior machine learning engineer.
           </p>
           <h3 className="sub-heading">What can I do for you?</h3>
           <p>
@@ -68,11 +67,6 @@ const IndexPage = () => (
             <li>
               <Link to='/bot'>
                 Chat Bots
-              </Link>
-            </li>
-            <li>
-              <Link to='/other'>
-                Custom Software
               </Link>
             </li>
           </ul>
