@@ -48,9 +48,8 @@ const IndexPage = () => (
         <div className='body'>
           <h3 className="sub-heading">About Me</h3>
           <p>
-            I specialize in building and integrating APIs, web and mobile applications development using React and React Native and chatbots. <br />
-            Some of my other interests include: Machine Learning, Distributed Systems &amp; Compilers. <br />
-            I am also practicing to become a junior machine learning engineer.
+            I specialize in building and integrating APIs, web and mobile applications development and also chatbots. <br />
+            I'm overly curious and a passionate learner.  <br /> When I'm not writing any code, I spend my time learning about Machine Learning, Distributed Systems &amp; other Programming Languages.
           </p>
           <h3 className="sub-heading">What can I do for you?</h3>
           <p>
