@@ -214,7 +214,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 hgroup {
   margin-left: 0;
@@ -230,23 +230,14 @@ ul {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  list-style-position: outside;
+    padding: 0;
+    list-style-position: outside;
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+    list-style-position: outside;
   list-style-image: none;
 }
 dl {
@@ -277,7 +268,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.45rem;
 }
 figure {
   margin-left: 0;
@@ -287,7 +278,7 @@ figure {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 pre {
   margin-left: 0;
@@ -344,7 +335,7 @@ form {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.45rem;
 }
 noscript {
   margin-left: 0;

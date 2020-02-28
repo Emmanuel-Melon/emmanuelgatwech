@@ -37,8 +37,9 @@ const Hamburger = styled.div`
 
 const Navbar = styled.div`
         margin: 0 auto;
-        max-width: 960px;
-        padding: 0.8rem;
+        max-width: 1024px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
         display: flex;
         justify-content: space-between;
         align-items:center;
@@ -55,7 +56,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            textDecoration: `underline`,
+            color: '#ffe259'
           }}
         >
           {siteTitle}
@@ -63,9 +64,8 @@ const Header = ({ siteTitle }) => (
       </Navbrand>
       <Nav>
         <AniLink to="/projects/"> Projects</AniLink>
-         <Link to="/blog/">Blog</Link>
           <Link to="/contact/">Contact</Link>
-          <Link to="/talks/">Talks</Link>
+          <a href="https://drive.google.com/file/d/12q04qj68NWykFsQ0N2BTXROuKK65HZc4/view?usp=sharing" target="_blank">Resume</a>
       </Nav>
     </Navbar><title></title>
   </Head>

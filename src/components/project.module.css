@@ -1,12 +1,19 @@
 .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #f83600;
+
+}
+
+.number {
+  font-size: 1.2rem;
+  color: #ffe259;
 }
 
 .project {
   margin-bottom: 0.2rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
   .project {
     margin-bottom: 0.5rem;
     background: rgb(14, 4, 1);
@@ -25,12 +32,112 @@
     padding: 0.9em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    border: solid 0.1rem #ffe259;
+    border-radius: 0.5rem;
+    color: #ffe259;
+    width: 200px;
+    margin-bottom: 0.4rem;
+    display: flex;
+    padding: 0.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightImage {
+    display: none;
+  }
 }
 
 .button {
-  border: solid 0.1em #f83600;
+  border: solid 0.1rem #ffe259;
   border-radius: 0.5rem;
+  color: #ffe259;
+  width: 200px;
+  display: flex;
+  padding: 0.2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-animation: heartbeat 3.5s ease-in-out infinite both;
+  animation: heartbeat 3.5s ease-in-out infinite both;
 }
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .project {
@@ -38,7 +145,7 @@
     background: rgba(14, 4, 5, 0.5);
     -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    border-bottom: solid 0.2em #f83600;
+    border-bottom: solid 0.1rem #ffe259;
     color: white;
     width: 100%;
     margin: 0.2rem;
@@ -53,13 +160,45 @@
     background: rgba(14, 4, 5, 0.5);
     -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    border-bottom: solid 0.2em #f83600;
     color: #ffffff;
-    width: 49%;
-    margin: 0.2rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: solid 0.1rem #f9d423;
+  }
+
+  .project h4 {
+    color: #ffe259;
+  }
+
+  .project h4:after {
+    display: block;
+    content: "";
+    height: 0.5rem;
+    width: 0.5rem;
+    padding: 0.1em;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+
+  .project h4:after {
+    margin-top: 0.2rem;
+  }
+
+  .options {
     display: flex;
-    padding: 0.9em;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+  }
+
+  .imageWrapper {
+    display: flex;
+  }
+
+  .image {
+    height: auto;
+    max-width: 100%;
+    border-radius: inherit;
   }
 }
 
@@ -76,17 +215,54 @@
   max-width: 300px;
 }
 
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  flex: 2;
+  margin: 1rem;
+}
+
+.rightImage {
+  -webkit-box-shadow: inset 6px 16px 0px 16px rgba(248,54,0,1);
+  -moz-box-shadow: inset 6px 16px 0px 16px rgba(248,54,0,1);
+  box-shadow: inset 6px 16px 0px 16px rgba(248,54,0,1);
+  padding-left: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.points {
+  list-style-type: lower-greek;
+  list-style-position: outside;
+  width: 300px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.point {
+
+}
+
 .skillList {
   display: flex;
   flex-wrap: wrap;
 }
 
 .skill {
-  background: #ffe259;
+  background: transparent;
   border-radius: 0.5rem;
-  margin: 0.2rem;
-  padding: 0.3rem;
-  color: #333;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+  color: #fff;
+  border: solid 0.1rem #f83600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -151,4 +327,10 @@ form {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+.icon {
+
+  color: #f9d423;
 }

@@ -61,7 +61,6 @@ li {
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  color: #fff;
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -79,7 +78,6 @@ img {
 button {
   padding: 0.5em;
   background: transparent;
-  width: 48%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -150,15 +148,16 @@ button:hover {
 }
 
 .profile-image {
-  max-width: 300px;
+  max-width: 400px;
+  -webkit-box-shadow: inset 6px 6px 0px 1px rgba(248,54,0,1);
+  -moz-box-shadow: inset 6px 6px 0px 1px rgba(248,54,0,1);
+  box-shadow: inset 6px 6px 0px 1px rgba(248,54,0,1);
 }
 
 .myImage {
   width: 100%;
   height: auto;
-  border-radius: 0.2rem;
-  transform: rotate(-4deg);
-  border: 0.2rem dashed #f83600;
+  transform: rotate(-2deg);
 }
 .sub-heading:after {
   display: block;
@@ -187,11 +186,14 @@ button:hover {
 }
 
 .work {
-  border: solid 0.1em #f9d423;
+  border: solid 0.1rem #f9d423;
+  justify-content: space-evenly;
+  width: 200px;
   display: flex;
-  justify-content: center;
+  margin-right: 1rem;
   align-items: center;
   color: #f9d423;
+  padding: 0.2rem;
   border-radius: 0.5rem;
 }
 
@@ -225,20 +227,19 @@ button:hover {
 }
 
 .intro p {
-
   background: rgb(14, 4, 1);
   background: linear-gradient(
-          9deg,
-          rgba(14, 4, 1, 0.5) 0%,
-          rgba(46, 17, 8, 0.5) 35%,
-          rgba(24, 5, 1, 0.5) 100%
+    9deg,
+    rgba(14, 4, 1, 0.5) 0%,
+    rgba(46, 17, 8, 0.5) 35%,
+    rgba(24, 5, 1, 0.5) 100%
   );
   -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  border-bottom: solid 0.2em #f83600;
+  border-bottom: solid 0.1rem #ffe259;
   color: #ffffff;
   display: flex;
-  padding: 0.8rem;
+  padding: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -329,7 +330,7 @@ span {
   }
   main,
   .content {
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 2em;
   }
 

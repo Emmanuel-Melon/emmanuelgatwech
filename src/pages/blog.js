@@ -12,7 +12,7 @@ const articles = [
     summary: "But that's the thing about tech, you can't know everything and you don't have to; Just learn enough to become productive and you'll eventually become really good at what you do because learning is a continuous process.",
     timestamp: Date.now(),
     tags: ["Development", "Self-Reflection", "Career Goals"]
-  }
+  },
 ]
 
 

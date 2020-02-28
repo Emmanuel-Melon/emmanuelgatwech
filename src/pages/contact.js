@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
 
+import { FaArrowAltCircleRight, FaUserAlt, FaInbox, FaEdit } from "react-icons/fa"
+
 const Header = styled.div`
     background: rgb(14, 4, 1);
   background: linear-gradient(
@@ -71,7 +73,7 @@ const ContactPage = () => {
           <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
             <div className={contactStyles.user}>
                 <label className={contactStyles.label}>
-                  <span className={contactStyles.text}>Name</span>
+                  <span className={contactStyles.text}>Your Name <FaUserAlt/> </span>
                   <input
                     type="text"
                     placeholder="Name"
@@ -81,17 +83,17 @@ const ContactPage = () => {
                     onChange={handleInputChange}/>
                 </label>
                 <label className={contactStyles.label}>
-                  <span className={contactStyles.text}>Email</span>
+                  <span className={contactStyles.text}>Email Address<FaInbox/> </span>
                   <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
                 </label>
             </div>
             <div>
               <label className={contactStyles.label}>
-                <span className={contactStyles.text}>Message</span>
+                <span className={contactStyles.text}>Your Message <FaEdit/> </span>
                 <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" value={message} onChange={e => setMessage(e.target.value)}/>
               </label>
             </div>
-            <button type="submit" className={contactStyles.submit}>Send</button>
+            <button type="submit" className={contactStyles.submit}>Alright, Send! <FaArrowAltCircleRight /> </button>
           </form>
       </div>
     </Layout>

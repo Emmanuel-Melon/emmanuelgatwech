@@ -12,6 +12,7 @@ import {
   FaStackOverflow,
   FaDev,
   FaLinkedinIn,
+  FaArrowAltCircleRight,
 } from "react-icons/fa"
 
 const IndexPage = () => (
@@ -32,56 +33,48 @@ const IndexPage = () => (
     />
     <div className="content">
       <div>
-        <h1 className="heading">Software Developer</h1>
-        <div className='profile'>
-          <div className='profile-image'>
-            <img src='https://pbs.twimg.com/profile_images/1178793207418757120/tNrpT5qa_400x400.jpg' alt='damn' className='myImage'/>
+        <h1 className="heading">Emmanuel Daniel</h1>
+        <div className="profile">
+          <div className="profile-image">
+            <img
+              src="https://pbs.twimg.com/profile_images/1178793207418757120/tNrpT5qa_400x400.jpg"
+              alt="damn"
+              className="myImage"
+            />
           </div>
           <div className="intro">
             <p>
-              Hi, my name is Emmanuel Daniel & I'm a Software Developer from South Sudan, friends call me Eman or
-              JunubiMan which literally translates to "Southern Guy". <br />I like
-              jogging, video games & playing chess.
+              I'm Eman &amp; I have been writing professional code for almost 3
+              years now.
+              <br />I like to build creative, fun and simple apps and I also
+              hold performance, scalability and maintaiblity at a very high
+              regard.
             </p>
           </div>
         </div>
-        <div className='body'>
-          <h3 className="sub-heading">About Me</h3>
+        <div className="body">
+          <h3 className="sub-heading">Eman</h3>
           <p>
-            I specialize in building and integrating APIs, web and mobile applications development and also chatbots. <br />
-            I'm overly curious and a passionate learner.  <br /> When I'm not writing any code, I spend my time learning about Machine Learning, Distributed Systems &amp; other Programming Languages.
+            I specialize in building and integrating APIs, web and mobile
+            application development and sometimes Chatbots.
           </p>
-          <h3 className="sub-heading">What can I do for you?</h3>
           <p>
-            I can help you build accessible, performant and scalable applications
-            using software's best practices.
+            When I'm not writing any code, I spend my time learning about
+            Machine Learning, Distributed Systems &amp; other Programming
+            Languages.
           </p>
-          <ul className="me">
-            <li><Link to='/api'>API Development & Integration</Link></li>
-            <li>
-              <Link to='/web'>
-                Web &amp; Mobile Development
-              </Link>
-            </li>
-            <li>
-              <Link to='/bot'>
-                Chat Bots
-              </Link>
-            </li>
-          </ul>
-          <h3 className="sub-heading">Wanna know more?</h3>
+          <h3 className="sub-heading">Interested?</h3>
           <p>
-            Sample of some of my favorite & most recent work if you'd like to take
-            a look at what I have done & what I can do
+            Sample of some of my favorite & most recent work if you'd like to
+            take a look at what I have done & what I can do
           </p>
-          <button className="work">
-            <Link to="/projects/" className="work-link">
-              See My Work <FaArrowRight />
-            </Link>
-          </button>
+
+          <Link to="/projects/" className="work">
+            See My Work <FaArrowAltCircleRight />
+          </Link>
           <div className="social">
-            <h3 className="sub-heading">Find Me</h3>
-            <p>Let's connect & hopefully work on something</p>
+            <h3 className="sub-heading">Let's Connect</h3>
+            <p>Have a chat, share ideas & hopefully work on something :)</p>
             <ul>
               <li>
                 <a href="https://twitter.com/junubiman" target="_blank">
