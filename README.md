@@ -1,7 +1,9 @@
 # My Personal Website
-A personal website showcasing my development skills for potential clients and employers.  
+
+A personal website showcasing my development skills for potential clients and employers.
 
 ## Objectives
+
 - [ ] Animations
 - [x] Responsive Design
 - [ ] Accessibility
@@ -20,7 +22,7 @@ A personal website showcasing my development skills for potential clients and em
 - [ ] Add Multiple Languages
 - [ ] Add Comment Section
 - [ ] Connect with other APIs
-- [ ] Add Testimonies Page 
+- [ ] Add Testimonies Page
 - [ ] Add Social Preview for posts & website.
 - [ ] Improve Content
 - [ ] Fix after click scale effect, reduce to normal size.
@@ -33,8 +35,13 @@ what is debouncing?
 relaying http requests to minimize network operations and to increase performance.
 what is a div soup?
 
-
 - Can't wait for an actual email?
 - you could call me on?
 - Check out my awesome messenger Bot.
 - integrate messenger bot on my website?
+
+One project at a time, let a user scroll to the side?
+title
+description
+image/video
+// tools used

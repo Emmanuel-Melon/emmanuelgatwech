@@ -8,6 +8,7 @@ import ProjectSummary from "../components/ProjectSummary"
 import { Link } from "gatsby"
 
 import acham from "../images/acham.png"
+import amare from "../images/amare.png"
 import mordor from "../images/mordor.png"
 import doof from "../images/doof.png"
 import revue from "../images/revue.png"
@@ -20,12 +21,58 @@ const projects = [
     demoAvailable: true,
     sourceAvailable: false,
     id: 1,
+    name: "LabXpert",
+    summary:
+      "A medical laboratory information system for managing and disseminating COVID-19 and Tuberculosis tests in Uganda. The system is supported by a network of GeneXpert machines distributed across different facilities in the country.",
+    skills: ["Redis", "TypeScript", "MongoDB", "TCP", "Node.js", "React.js"],
+    link: "",
+    completed: true,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "http://acham.life",
+    image: true,
+    imageUrl: acham,
+    points: [
+      "Built a password reset system.",
+      "Built a notifications system that supports mail and web push notifications via Redis as a Queueing system.",
+      "Helped convert the platform into a progressive web application",
+      "Managed Docker deployments and CI configuration for various project components.",
+    ],
+  },
+  {
+    category: "professional",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 2,
+    name: "Test & Fly",
+    summary:
+      "Test & Fly was founded in 2020 as a state of the art laboratory specialized in PCR-SARS-Cov-2 diagnostic development. We perform advanced (PCR) diagnostic testing on behalf of other government and private clinical laboratories.",
+    skills: ["Redis", "TypeScript", "MongoDB", "TCP", "Node.js", "React.js"],
+    link: "",
+    completed: true,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "http://acham.life",
+    image: true,
+    imageUrl: acham,
+    points: [
+      "Built a password reset system.",
+      "Built a notifications system that supports mail and web push notifications via Redis as a Queueing system.",
+      "Helped convert the platform into a progressive web application",
+      "Managed Docker deployments and CI configuration for various project components.",
+    ],
+  },
+  {
+    category: "professional",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 3,
     name: "Claudia Acham",
     summary:
       "A website for a Nairobi based South Sudanese Makeup Artist where she lists services, manage bookings and appointments and sells makeup kits.",
     skills: ["Gatsby.js", "Adobe XD", "MongoDB", "Styled-Components"],
     link: "",
-    completed: false,
+    completed: true,
     started: "November",
     code: "https://github.com/Emmanuel-Melon/la-revue",
     demo: "http://acham.life",
@@ -39,25 +86,29 @@ const projects = [
   },
   {
     category: "professional",
-    id: 2,
-    name: "Doof Bot",
-    summary:
-      "A messenger chat bot for a wine marketing and distribution company. It alows clients to place orders directly from within the Bot.",
-    skills: ["Messenger API", "Node.js", "MongoDB"],
-    demo: "http://doofs.life",
     demoAvailable: true,
-    completed: false,
     sourceAvailable: false,
+    id: 4,
+    name: "Amare The Palace",
+    summary:
+      "A website for a Nairobi based South Sudanese Makeup Artist where she lists services, manage bookings and appointments and sells makeup kits.",
+    skills: ["Gatsby.js", "Adobe XD", "MongoDB", "Styled-Components"],
+    link: "",
+    completed: true,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "http://acham.life",
     image: true,
-    imageUrl: doof,
+    imageUrl: amare,
     points: [
-      "Designed and developed landing page",
-      "Developed Orders, Customer Care and Payment Services",
+      "Custom &amp; responsive User Interface",
+      "Currently building a bookings and orders system",
+      "Developing a Messenger Chatbot for more effective communication.",
     ],
   },
   {
     category: "personal",
-    id: 4,
+    id: 5,
     name: "La Revue",
     summary:
       "A restaurant review website that allows you find and review restaurants in any city. The app allows you to search, filter, add reviews and look for meals.",
@@ -83,7 +134,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 5,
+    id: 6,
     name: "Shadows of Mordor",
     summary:
       "A JavaScript turn-based boardgame where players collect items from the board and then face each other when they land at adjacent cells.",
@@ -103,7 +154,7 @@ const projects = [
   },
   {
     category: "personal",
-    id: 6,
+    id: 7,
     name: "Quotation Generator",
     summary:
       "Random quote generator which constructs quotes by assembling different pieces of a sentence.",
@@ -116,6 +167,50 @@ const projects = [
     image: true,
     imageUrl: quote,
     points: ["Designed and developed User Interface"],
+  },
+  {
+    category: "personal",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 8,
+    name: "Brooklyn Film Festival",
+    summary:
+      "A website for a Nairobi based South Sudanese Makeup Artist where she lists services, manage bookings and appointments and sells makeup kits.",
+    skills: ["Gatsby.js", "Adobe XD", "MongoDB", "Styled-Components"],
+    link: "",
+    completed: false,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "http://acham.life",
+    image: true,
+    imageUrl: acham,
+    points: [
+      "Custom &amp; responsive User Interface",
+      "Currently building a bookings and orders system",
+      "Developing a Messenger Chatbot for more effective communication.",
+    ],
+  },
+  {
+    category: "personal",
+    demoAvailable: true,
+    sourceAvailable: false,
+    id: 9,
+    name: "DevC Kampala",
+    summary:
+      "A website for a Nairobi based South Sudanese Makeup Artist where she lists services, manage bookings and appointments and sells makeup kits.",
+    skills: ["Gatsby.js", "Adobe XD", "MongoDB", "Styled-Components"],
+    link: "",
+    completed: false,
+    started: "November",
+    code: "https://github.com/Emmanuel-Melon/la-revue",
+    demo: "http://acham.life",
+    image: true,
+    imageUrl: acham,
+    points: [
+      "Custom &amp; responsive User Interface",
+      "Currently building a bookings and orders system",
+      "Developing a Messenger Chatbot for more effective communication.",
+    ],
   },
 ]
 
@@ -145,8 +240,7 @@ const ProjectsPage = () => {
       <div className="main">
         <div>
           <h1 className="sub-heading">My Projects</h1>
-          <p>Some of the most recent projects that I've worked on.</p>
-          <div className={projectStyles.filter}></div>
+          <p>Some of my most favorite work</p>
         </div>
       </div>
       <div className={projectStyles.projectList}>

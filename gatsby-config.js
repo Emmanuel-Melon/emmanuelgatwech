@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Eman`,
+    title: `E`,
     description: `Full-Stack Software Developer with an extensive experience in building fast, scalable & user friendly apps.`,
     author: `Emmanuel-Melon`,
   },
@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Dosis`, `Audiowide`],
+        fonts: [`Dosis`, `Righteous`],
         display: "swap",
       },
     },

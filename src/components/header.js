@@ -48,15 +48,13 @@ const Navbar = styled.div`
 
 
 const Header = ({ siteTitle }) => (
-  <Head
-    title={siteTitle}
-  >
+  <Head title={siteTitle}>
     <Navbar>
       <Navbrand style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: '#ffe259'
+            color: "#ffe259",
           }}
         >
           {siteTitle}
@@ -64,10 +62,16 @@ const Header = ({ siteTitle }) => (
       </Navbrand>
       <Nav>
         <AniLink to="/projects/"> Projects</AniLink>
-          <Link to="/contact/">Contact</Link>
-          <a href="https://drive.google.com/file/d/12q04qj68NWykFsQ0N2BTXROuKK65HZc4/view?usp=sharing" target="_blank">Resume</a>
+        <Link to="/contact/">Contact</Link>
+        <a
+          href="https://drive.google.com/file/d/1haWv-v2fUmHmUaN8JWp-84uukgnaGxaq/view?usp=sharing"
+          target="_blank"
+        >
+          Resume
+        </a>
       </Nav>
-    </Navbar><title></title>
+    </Navbar>
+    <title></title>
   </Head>
 )
 

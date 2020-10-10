@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Me from "../images/eman.jpg"
 
 import {
   FaArrowRight,
@@ -37,38 +38,25 @@ const IndexPage = () => (
         <div className="profile">
           <div className="profile-image">
             <img
-              src="https://pbs.twimg.com/profile_images/1178793207418757120/tNrpT5qa_400x400.jpg"
+              src={Me}
               alt="damn"
               className="myImage"
             />
           </div>
-          <div className="intro">
+          <div className="brief">
+            <h3 className="sub-heading">Eman and the E is for Energy!</h3>
             <p>
-              I'm Eman &amp; I have been writing professional code for almost 3
-              years now.
-              <br />I like to build creative, fun and simple apps and I also
-              hold performance, scalability and maintaiblity at a very high
-              regard.
+              I wrote my first line of code on September 12th, 2015 & spent 2020 fighting Covid-19 using Code! <br />
+            </p>
+            <h3 className="sub-heading">Software Engineer @ FreelyFormd</h3>
+            <p>
+              I like the Backend, cool with the FrontEnd & I'm currently exploring Distributed Systems & Machine Learning.
             </p>
           </div>
         </div>
         <div className="body">
-          <h3 className="sub-heading">Eman</h3>
-          <p>
-            I specialize in building and integrating APIs, web and mobile
-            application development and sometimes Chatbots.
-          </p>
-          <p>
-            When I'm not writing any code, I spend my time learning about
-            Machine Learning, Distributed Systems &amp; other Programming
-            Languages.
-          </p>
           <h3 className="sub-heading">Interested?</h3>
-          <p>
-            Sample of some of my favorite & most recent work if you'd like to
-            take a look at what I have done & what I can do
-          </p>
-
+          <p>My most recent work</p>
           <Link to="/projects/" className="work">
             See My Work <FaArrowAltCircleRight />
           </Link>
