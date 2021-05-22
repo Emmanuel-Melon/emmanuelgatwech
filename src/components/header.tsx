@@ -1,17 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
+import { FaBars } from 'react-icons/fa'
 
 import styled from 'styled-components'
 
 const Head = styled.header`
-  width: 1024px;
-  margin: 1rem auto;
-  background: var(--content-background);
-  padding: 1rem;
-  box-shadow: var(--box-shadow);
+  background: #045757;
+  margin-bottom: 1.5rem;
+  border-bottom: double 0.15rem #ffffff;
 `
-
 
 const Nav = styled.nav`
     & ul {
@@ -23,13 +23,11 @@ const Nav = styled.nav`
   }
 `
 
-const Navbrand = styled.span`
+const Navbrand = styled.h3`
   & a {
-  width: fit-content;
-  background: var(--background);
-  border-radius: var(--border-radius);
-  padding: 0.5rem;
-  color: var(--secondary-color);
+    color: #fff;
+    font-size: 1.5rem;
+    transform: rotate(90deg);
   }
 `
 
@@ -37,13 +35,17 @@ const Hamburger = styled.div`
   display: none;
 `
 
+
 const Navbar = styled.div`
+        margin: 0 auto;
         max-width: 1024px;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
+        padding-top: 4rem;
         display: flex;
+        justify-content: space-between;
         align-items:center;
+        color: #ffffff;
 `
+
 
 const Header = ({ siteTitle }) => (
   <Head title={siteTitle}>
@@ -51,13 +53,15 @@ const Header = ({ siteTitle }) => (
       <Navbrand style={{ margin: 0 }}>
         <Link
           to="/"
+          style={{
+            color: "#fd7014",
+          }}
         >
-          Home
+          {siteTitle}
         </Link>
       </Navbrand>
       <Nav>
-        <Link to="/projects/"> Projects</Link>
-        <Link to="/blog/">Blog</Link>
+        <AniLink to="/projects/"> Projects</AniLink>
         <Link to="/contact/">Contact</Link>
       </Nav>
     </Navbar>
