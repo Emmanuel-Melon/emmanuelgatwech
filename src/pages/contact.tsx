@@ -3,8 +3,21 @@ import contactStyles from '../components/contact.module.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from 'styled-components'
 
-import styled from "styled-components"
+import { FaArrowAltCircleRight, FaUserAlt, FaInbox, FaEdit } from "react-icons/fa"
+
+const Header = styled.div`
+  background: #222222;
+  border-radius: 1.5rem;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  border: solid 1px #eee;
+  margin: 0 auto 0.5em;
+  padding-left: 1.5em;
+`
+
 
 const types = new Map();
 types.set('email', /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/);
@@ -32,6 +45,7 @@ const ContactPage = () => {
     setEmail(e.target.value)
   }
 
+  // conditional style names in styled-components
   const handleInputChange = e => {
     const regex = new RegExp(types.get('name'));
     const isValid = regex.test(e.target.value);
@@ -43,36 +57,44 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
-      <div className="up">
+      <Header>
         <div>
-         <h1 className='heading'>Contact Me<span className="period">.</span></h1>
-        <p>
-        Send me a message or two and I will most likely reply!
-        </p>
-        </div>
-      </div>
+              <h1 className='sub-heading'>Get In Touch</h1>
+      <p className={ (isNameValid) ? 'red' : 'blue' }>
+        Let's have a little chat
+      </p></div>
+      </Header>
       <div className={contactStyles.content}>
-        <div>
-        <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
+          <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
             <div className={contactStyles.user}>
-                <input
+                <label className={contactStyles.label}>
+                  <span className={contactStyles.text}>Your Name <FaUserAlt/> </span>
+                  <input
                     type="text"
                     placeholder="Name"
                     id="Name"
                     name="name"
                     value={name}
                     onChange={handleInputChange}/>
-                <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
+                </label>
+                <label className={contactStyles.label}>
+                  <span className={contactStyles.text}>Email Address<FaInbox/> </span>
+                  <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
+                </label>
             </div>
             <div>
-              <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" value={message} onChange={e => setMessage(e.target.value)}/>
+              <label className={contactStyles.label}>
+                <span className={contactStyles.text}>Your Message <FaEdit/> </span>
+                <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" value={message} onChange={e => setMessage(e.target.value)}/>
+              </label>
             </div>
-            <button type="submit">Send </button>
+            <button type="submit" className={contactStyles.submit}>Send! <FaArrowAltCircleRight /> </button>
           </form>
-        </div>
       </div>
     </Layout>
   )
 }
 
 export default ContactPage
+
+// use form labels to indicate validity status of inputs and have them light up green or red

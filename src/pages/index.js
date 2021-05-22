@@ -4,47 +4,17 @@ import SEO from "../components/seo"
 import Sidebar from "../components/sidebar"
 import Recent from "../components/recent"
 import styled from "styled-components"
-import me from "../images/eman.jpg"
 
 import { 
   FiTwitter,
   FiGithub,
-  FiCode,
   FiLinkedin,
   FiArrowUpRight,
-  FiMapPin,
+  FiFile,
   FiChevronDown
 } from "react-icons/fi";
 
-const orgs = [
-  {
-    id: 1,
-    name: "Yonja",
-    url: "https://yonja.io",
-    start: "February 2019",
-    finish: "October 2019",
-    title: "Software Engineer",
-    location: "Kampala, Uganda"
-  },
-    {
-    id: 2,
-    name: "Freelance",
-    url: "https://yonja.io",
-    start: "October 2019",
-    finish: "April 2020",
-    title: "Software Engineer",
-    location: "Kampala, Uganda"
-  },
-  {
-    id: 3,
-    name: "FreelyFormd",
-    url: "https://freelyformd.com",
-    start: "June 2020",
-    finish: "APril 2021",
-    title: "Software Engineer",
-    location: "Remote"
-  }
-]
+import data from "../data.json"
 
 const Org = ({
   name,
@@ -62,7 +32,7 @@ const Org = ({
         <Icon>{id} </Icon>
         <div className="comp">
           <p className="title">
-         {title}
+        {title}
         </p>
           <h4 className="other-heading">{name} <FiArrowUpRight /></h4>
         </div>
@@ -113,19 +83,15 @@ const IndexPage = () => (
         `Software Engineer`,
       ]}
     />
-    <div className="profile">
+    <section className="profile">
     <div className="note">
       <p>Hi, my name is</p>
       <div>
         <h1>Emmanuel <br />Daniel</h1>
         <h2>But you can call me Eman, and the E is for Energy ⚛️</h2>
       </div>
-      
-
-      
       <p> I am a Full-Stack Software Developer with nearly 3 years of relevant experience and a proven track record of success in achieving extraordinary results.</p>
       </div>
-
       <div>
       <h4>Connect with me</h4>
       <ul className="social">
@@ -143,6 +109,11 @@ const IndexPage = () => (
           <FiLinkedin className="icon" /> LinkedIn <FiArrowUpRight />
           </a>
         </li>
+        <li>
+          <a href="https://github.com/Emmanuel-Melon" target="_blank">
+          <FiFile className="icon" /> Resume <FiArrowUpRight />
+          </a>
+        </li>
       </ul>
       </div>
 
@@ -155,26 +126,27 @@ const IndexPage = () => (
         </ul>
       </div>
 
-    </div>
+    </section>
 
-    <div className="summary">
+    <section className="summary">
       <div className="summary-left">
         <h4>Currently</h4>
       <Sidebar />
       </div>
-
       <section className="work">
           <div>
         <h4>Previously</h4>
         <Skills>
           {
-            orgs.map(org => <Org {...org} key={org.id}/>)
+            data.work.map(org => <Org {...org} key={org.id}/>)
           }
         </Skills>
       </div>
     </section>
-    </div>
-    <Recent />
+    </section>
+    <section>
+      <Recent />
+    </section>
   </Layout>
 )
 
