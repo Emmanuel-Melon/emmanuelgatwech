@@ -15,7 +15,7 @@ const Icon = styled.span`
   background: #261c3a;
   padding: 0.5rem;
   border-radius: 50%;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 `;
 
 const Current = styled.ul`

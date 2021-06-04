@@ -1,13 +1,14 @@
 :root {
   --border-radius: 0rem;
   --heading-color: #fff;
-  --sub-heading-color: #ff99c8;
+  --sub-heading-color: #577590;
   --white: #fff;
   --padding: 1rem;
   --background: #1a1a2e;
   --content-background: rgba(14, 4, 5, 0.2);
-  --secondary-color: #ff99c8;
-  --primary-color: #007f5f;
+  --accent-color: #43aa8b;
+  --secondary-color: #577590;
+  --primary-color: #3c096c;
   --box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
   --text-color: #b4a5a5;
@@ -15,7 +16,21 @@
 
 html,
 body {
-  background-color: var(--background);
+  background: linear-gradient(45deg, #000850 0%, #000320 100%),
+    radial-gradient(100% 225% at 100% 0%, var(--primary-color) 0%, #000000 100%),
+    linear-gradient(225deg, var(--primary-color) 0%, #000000 100%),
+    linear-gradient(
+      135deg,
+      #cdffeb 10%,
+      #cdffeb 35%,
+      #009f9d 35%,
+      #009f9d 60%,
+      #07456f 60%,
+      #07456f 67%,
+      #0f0a3c 67%,
+      #0f0a3c 100%
+    );
+  background-blend-mode: screen, overlay, hard-light, normal;
   color: var(--text-color);
   font-size: 18px;
 }
@@ -37,7 +52,6 @@ h6 {
 }
 
 h1 {
-  color: var(--sub-heading-color);
   font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -472,7 +486,7 @@ main {
   background: var(--background);
   border-radius: var(--border-radius);
   padding: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 .org-head {
