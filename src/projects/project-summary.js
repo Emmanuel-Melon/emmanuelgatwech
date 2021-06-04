@@ -1,5 +1,4 @@
 import React from "react"
-import projectStyles from "./project.module.css"
 import { FiArrowUpRight } from "react-icons/fa"
 import styled from "styled-components"
 
@@ -34,14 +33,14 @@ export const ProjectSummary = ({ project }) => {
   return (
     <Project>
       <div>
-      <div className={projectStyles.body}>
+      <div>
           <h4 className="other-heading">
             {project.name} <FiArrowUpRight />
           </h4>
         <p>{project.summary}</p>
       </div>
-      <div className={projectStyles.actions}>  
-        <div className={projectStyles.options}>
+      <div>  
+        <div>
           {
             project.demoAvailable ? (
               <button href={project.demo} target="_blank">

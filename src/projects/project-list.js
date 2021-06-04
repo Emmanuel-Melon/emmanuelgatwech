@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import projectStyles from "../components/project.module.css"
 import { ProjectSummary } from "./project-summary"
 
 import { 
@@ -54,7 +53,7 @@ export const ProjectList = () => {
         </li>
       </ul>
       </div>
-              <div className={projectStyles.projectList}>
+              <div>
         {data.projects.map(project => (
           <ProjectSummary project={project} key={project.id} />
         ))}
