@@ -30,7 +30,7 @@ const Body = styled.div`
   padding: 1rem;
 `
 
-const ProjectSummary = ({ project }) => {
+export const ProjectSummary = ({ project }) => {
   return (
     <Project>
       <div>
@@ -62,5 +62,3 @@ const ProjectSummary = ({ project }) => {
   </Project>
   )
 }
-
-export default ProjectSummary

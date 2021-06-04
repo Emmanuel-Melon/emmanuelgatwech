@@ -1,54 +1,32 @@
-
-
-.articleSummary {
-    background: rgba(14, 4, 5, 0.5);
-    color: #fff;
-    padding: 1em;
-    margin-bottom: 0.5em;
-    border-bottom: solid 0.2em #f83600;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .articleSummary {
-        background: rgba(14, 4, 5, 0.5);
-        color: #fff;
-        padding: 1em;
-        margin-bottom: 0.5em;
-        border-bottom: solid 0.2em #f83600;
-    }
-}
-
-@media (min-width: 1024px) {
-    .articleSummary {
-        background: rgba(14, 4, 5, 0.5);
-        padding: 1em;
-        margin-bottom: 0.5em;
-        border-bottom: solid 0.2em #f83600;
-    }
-
-    .title {
-        font-size: 1.5rem;
-        color: red;
-    }
-}
+  .articleSummary {
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  -webkit-animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-tl 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background: rgba(14, 4, 5, 0.2);
+  }
 
 
 .tags {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .tag {
-    background: #ffe259;
-    border-radius: 0.5rem;
-    margin: 0.2em;
-    padding: 0.3em;
-    color: #333;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #184d47;
+  border-radius: 0.5rem;
+  margin-right: 0.2rem;
+  padding: 0.4rem;
+  color: #fff;
 }
 
 .title:hover {
-    cursor: pointer;
+  cursor: pointer;
 }

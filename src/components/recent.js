@@ -1,13 +1,5 @@
 import React from "react"
 
-import {
-  FaMediumM,
-  FaStackOverflow,
-  FaDev,
-} from "react-icons/fa"
-
-import me from "../images/me.jpeg"
-
 import { 
   FiCode,
   FiArrowUpRight

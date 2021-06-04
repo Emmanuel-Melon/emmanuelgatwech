@@ -57,7 +57,6 @@ const Header = ({ siteTitle }) => (
       </Navbrand>
       <Nav>
         <Link to="/projects/"> Projects</Link>
-        <Link to="/blog/">Blog</Link>
         <Link to="/contact/">Contact</Link>
       </Nav>
     </Navbar>

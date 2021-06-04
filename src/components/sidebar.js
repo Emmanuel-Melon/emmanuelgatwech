@@ -1,24 +1,11 @@
 import React from "react";
-import {
-  FaMediumM,
-  FaStackOverflow,
-  FaDev,
-} from "react-icons/fa"
 
 import styled from "styled-components"
 
-import me from "../images/eman.jpg"
-
 import { 
   FiPrinter,
-  FiTwitter,
-  FiGithub,
   FiBriefcase,
-  FiGitBranch,
   FiGitCommit,
-  FiArrowRight,
-  FiLinkedin,
-  FiBook
 } from "react-icons/fi";
 
 
