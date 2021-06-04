@@ -1,16 +1,17 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
+import styled from "styled-components"
 import Header from "./header"
 import "./layout.css"
+
+const Footer = styled.footer`
+
+  padding: 1rem;
+  text-align: center;
+`
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,14 +28,18 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
+          className="scroll-container"
           style={{
             margin: `0 auto`,
             maxWidth: 1024,
-            paddingTop: 0,
+            marginTop: 16
           }}
         >
           <main>{children}</main>
         </div>
+        <Footer>
+          <p>Eman &copy; 2021</p>
+        </Footer>
       </>
     )}
   />
