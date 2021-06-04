@@ -117,15 +117,6 @@ const IndexPage = () => (
       </ul>
       </div>
 
-      <div className="scroll">
-        <ul className="control">
-          <li><FiChevronDown /></li>
-          <li><FiChevronDown /></li>
-          <li><FiChevronDown /></li>
-          <li><FiChevronDown /></li>
-        </ul>
-      </div>
-
     </section>
 
     <section className="summary">

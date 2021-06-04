@@ -6,6 +6,7 @@ import {
   FiPrinter,
   FiBriefcase,
   FiGitCommit,
+  FiArrowUpRight,
 } from "react-icons/fi";
 
 
@@ -17,14 +18,30 @@ const Icon = styled.span`
   color: var(--secondary-color);
 `;
 
+const Current = styled.ul`
+  width: fit-content;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  & li {
+    margin-bottom: 1.5rem;
+    width: auto;
+  }
+  li:nth-last-child() {
+    border-bottom: none;
+  }
+`;
+
 export default function Sidebar () {
   return (
     <aside>
-    <ul className="int">
+    <Current>
+        <li><Icon><FiBriefcase /></Icon>FullStack Engineer - GitStart <FiArrowUpRight /></li>
+        <li><Icon><FiBriefcase /></Icon> Founder - Biti <FiArrowUpRight /></li>
         <li><Icon><FiGitCommit /></Icon> Open Source Contributor</li>
-        <li><Icon><FiBriefcase /></Icon> Founder @ Biti</li>
         <li><Icon><FiPrinter /></Icon>Technical Writer</li>
-    </ul>
+    </Current>
     </aside>
   )
 }

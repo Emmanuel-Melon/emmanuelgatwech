@@ -10,16 +10,16 @@
   --primary-color: #007f5f;
   --box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  --text-color: #b4a5a5;
 }
 
 html,
 body {
   background-color: var(--background);
-  color: #b4a5a5;
+  color: var(--text-color);
   font-size: 18px;
 }
 
-/* typography */
 h1,
 h2,
 h3,
@@ -100,7 +100,7 @@ a {
 }
 
 a:hover {
-  color: #b4a5a5;
+  color: var(--text-color);
 }
 
 img {
@@ -108,7 +108,6 @@ img {
   height: auto;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
-  border: solid 0.25rem #bc6ff1;
 }
 
 ul {
@@ -144,20 +143,6 @@ button:hover {
   justify-content: center;
 }
 
-.int {
-  display: flex;
-  flex-direction: column;
-}
-
-.int li {
-  margin-bottom: 1.5rem;
-  width: auto;
-}
-
-.int li:nth-last-child() {
-  border-bottom: none;
-}
-
 .main {
   display: flex;
   width: 100%;
@@ -172,7 +157,7 @@ button:hover {
 }
 
 .orange {
-  color: #b4a5a5;
+  color: var(--text-color);
   font-size: 1.5em;
 }
 
@@ -192,13 +177,6 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.scroll {
-  display: flex;
-  justify-content: flex-end;
-  color: var(--white);
-  align-items: flex-end;
-}
-
 .control {
   justify-self: flex-end;
   position: -webkit-sticky; /* Safari */
@@ -214,17 +192,6 @@ button:hover {
 .control li:nth-child(1) {
   background: var(--content-background);
   color: var(--secondary-color);
-}
-
-section {
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
-.scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 .profile section {
@@ -302,7 +269,7 @@ section {
 .other-heading {
   margin-right: 1.5rem;
   width: fit-content;
-  background: rgba(14, 4, 5, 0.2);
+  background: var(--content-background);
   padding: 0.5rem;
   border-bottom: solid 0.15rem var(--content-background);
 }
@@ -443,7 +410,7 @@ main {
 .custom-hr {
   margin: 1rem;
   background-color: var(--content-background);
-  border-top: 1px dotted rgba(14, 4, 5, 0.2);
+  border-top: 1px dotted var(--content-background);
 }
 
 .profile-card {
@@ -523,11 +490,11 @@ main {
 .social li {
   margin-right: 1.5rem;
   width: fit-content;
-  background: rgba(14, 4, 5, 0.2);
+  background: var(--content-background);
   border-radius: var(--border-radius);
   padding: 0.5rem;
   box-shadow: var(--box-shadow);
-  border-bottom: solid 0.15rem rgba(14, 4, 5, 0.2);
+  border-bottom: solid 0.15rem var(--content-background);
 }
 
 .social li:hover {
