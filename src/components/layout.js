@@ -32,7 +32,8 @@ const Layout = ({ children }) => (
           style={{
             margin: `0 auto`,
             maxWidth: 1024,
-            marginTop: 16
+            marginTop: 16,
+            display: "flex"
           }}
         >
           <main>{children}</main>

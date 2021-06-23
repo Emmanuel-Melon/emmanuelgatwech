@@ -1,5 +1,4 @@
 import React, { useState, useReducer } from "react"
-import contactStyles from '../components/contact.module.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,7 +21,7 @@ const ContactPage = () => {
   const [formErrors, setFormErrors] = useState({})
 
   const handleSubmit = e => {
-    console.log('handleSubmit')
+
   }
 
   const handleEmailChange = e => {
@@ -45,16 +44,16 @@ const ContactPage = () => {
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
       <div className="up">
         <div>
-         <h1 className='heading'>Contact Me<span className="period">.</span></h1>
+        <h1 className='heading'>Contact Me<span className="period">.</span></h1>
         <p>
         Send me a message or two and I will most likely reply!
         </p>
         </div>
       </div>
-      <div className={contactStyles.content}>
+      <div>
         <div>
-        <form className={contactStyles.form} method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
-            <div className={contactStyles.user}>
+        <form method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
+            <div>
                 <input
                     type="text"
                     placeholder="Name"
@@ -65,7 +64,7 @@ const ContactPage = () => {
                 <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
             </div>
             <div>
-              <textarea id="message" placeholder="Your Message" cols="30" rows="5" className={contactStyles.message} name="message" value={message} onChange={e => setMessage(e.target.value)}/>
+              <textarea id="message" placeholder="Your Message" cols="30" rows="5" name="message" value={message} onChange={e => setMessage(e.target.value)}/>
             </div>
             <button type="submit">Send </button>
           </form>

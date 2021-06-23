@@ -1,14 +1,14 @@
 :root {
   --border-radius: 0rem;
   --heading-color: #fff;
-  --sub-heading-color: #577590;
+  --sub-heading-color: #adf7b6;
   --white: #fff;
   --padding: 1rem;
   --background: #1a1a2e;
   --content-background: rgba(14, 4, 5, 0.2);
-  --accent-color: #43aa8b;
-  --secondary-color: #577590;
-  --primary-color: #3c096c;
+  --accent-color: #17c3b2;
+  --secondary-color: #adf7b6;
+  --primary-color: #590d22;
   --box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
   --text-color: #b4a5a5;
@@ -16,7 +16,7 @@
 
 html,
 body {
-  background: linear-gradient(45deg, #000850 0%, #000320 100%),
+  background: linear-gradient(45deg, var(--background) 0%, #000320 100%),
     radial-gradient(100% 225% at 100% 0%, var(--primary-color) 0%, #000000 100%),
     linear-gradient(225deg, var(--primary-color) 0%, #000000 100%),
     linear-gradient(
@@ -25,10 +25,10 @@ body {
       #cdffeb 35%,
       #009f9d 35%,
       #009f9d 60%,
-      #07456f 60%,
-      #07456f 67%,
-      #0f0a3c 67%,
-      #0f0a3c 100%
+      var(--secondary-color) 60%,
+      var(--secondary-color) 67%,
+      var(--accent-color) 67%,
+      var(--accent-color) 100%
     );
   background-blend-mode: screen, overlay, hard-light, normal;
   color: var(--text-color);
@@ -48,16 +48,11 @@ h6 {
     both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   color: #fff;
-  margin: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  width: fit-content;
-  text-decoration: overline;
 }
 
 .names {
@@ -168,27 +163,6 @@ button:hover {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-.orange {
-  color: var(--text-color);
-  font-size: 1.5em;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-
-.profile p {
-  width: 600px;
-  margin-top: 1rem;
-}
-
-.note {
-  margin-bottom: 1rem;
 }
 
 .control {
@@ -459,24 +433,6 @@ main {
   align-items: center;
 }
 
-.work {
-  margin-left: 1rem;
-}
-
-.org {
-  border-radius: var(--border-radius);
-  margin-top: 1rem;
-  color: #fff;
-  box-shadow: var(--box-shadow);
-  background: var(--content-background);
-  border: solid 0.1rem var(--content-background);
-  padding: 1rem;
-}
-
-.org:hover {
-  border-bottom: solid 0.15rem var(--primary-color);
-}
-
 .cur {
   background: var(--primary-color);
 }
@@ -522,9 +478,5 @@ main {
 
 .comp {
   display: flex;
-  flex-direction: column;
-}
-
-.comp p {
-  justify-self: center;
+  align-items: center;
 }

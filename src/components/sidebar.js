@@ -23,13 +23,9 @@ const Current = styled.ul`
   flex: 1;
   display: flex;
   flex-direction: column;
-
+  padding: 0;
   & li {
     margin-bottom: 1.5rem;
-    width: auto;
-  }
-  li:nth-last-child() {
-    border-bottom: none;
   }
 `;
 

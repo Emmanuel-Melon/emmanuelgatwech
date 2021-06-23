@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `E`,
+    title: `Eman`,
     description: `Full-Stack Software Developer with an extensive experience in building fast, scalable & user friendly apps.`,
     author: `Emmanuel-Melon`,
   },
@@ -10,7 +10,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-155371821-1",
       },
     },

@@ -5,13 +5,12 @@ import React from "react"
 import styled from 'styled-components'
 
 const Head = styled.header`
-  width: 1024px;
-  margin: 1rem auto;
+  margin: 0rem auto;
   background: var(--content-background);
   padding: 1rem;
-  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
 `
-
 
 const Nav = styled.nav`
     & ul {
