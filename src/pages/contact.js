@@ -4,6 +4,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import styled from "styled-components"
+import { Input } from "../components/input"
+import { Button } from "../components/button"
+
+import { 
+  FiTwitter,
+  FiGithub,
+  FiLinkedin,
+  FiArrowUpRight,
+} from "react-icons/fi";
+
+const Message = styled.textarea`
+background: var(--content-background);
+color: var(--white);
+padding: 0.5rem;
+`;
 
 const types = new Map();
 types.set('email', /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/);
@@ -42,34 +57,44 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
-      <div className="up">
-        <div>
-        <h1 className='heading'>Contact Me<span className="period">.</span></h1>
+      <div>
+      <h1 className='heading'>Contact Me</h1>
+        <ul style={{ display: 'flex' }}>
+        <li>
+          <a href="https://twitter.com/junubiman" target="_blank"> <FiTwitter /> Twitter <FiArrowUpRight />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Emmanuel-Melon" target="_blank">
+          <FiGithub /> Github <FiArrowUpRight />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Emmanuel-Melon" target="_blank">
+          <FiLinkedin /> LinkedIn <FiArrowUpRight />
+          </a>
+        </li>
+      </ul>
         <p>
         Send me a message or two and I will most likely reply!
         </p>
-        </div>
-      </div>
-      <div>
-        <div>
-        <form method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
+      <form method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
             <div>
-                <input
+                <Input
                     type="text"
                     placeholder="Name"
                     id="Name"
                     name="name"
                     value={name}
                     onChange={handleInputChange}/>
-                <input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
+                <Input type="email" placeholder="Email Address"  id="Email Address" name="_replyto" value={email} onChange={handleEmailChange}/>
             </div>
             <div>
-              <textarea id="message" placeholder="Your Message" cols="30" rows="5" name="message" value={message} onChange={e => setMessage(e.target.value)}/>
+              <Message id="message" placeholder="Your Message" cols="44" rows="5" name="message" value={message} onChange={e => setMessage(e.target.value)}/>
             </div>
-            <button type="submit">Send </button>
+            <Button type="submit">Send </Button>
           </form>
-        </div>
-      </div>
+      </div> 
     </Layout>
   )
 }

@@ -1,4 +1,42 @@
 {
+  "articles": [
+    {
+      "category": "professional",
+      "demoAvailable": true,
+      "sourceAvailable": false,
+      "id": 1,
+      "name": "Understanding Git",
+      "summary": "This article will help you gain a practical understanding of Git's most commonly used features. Having a solid grasp of these concepts will help you avoid common mistakes and also use Git more efficiently."
+  },
+  {
+      "category": "professional",
+      "demoAvailable": true,
+      "sourceAvailable": false,
+      "id": 2,
+      "name": "MongoDB Aggregation Framework",
+      "summary": "Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together and can perform a variety of operations on the grouped data to return a single result. In SQL count(*) and with the group by is an equivalent of MongoDB aggregation."
+  }
+  ],
+    "education": [
+    {
+      "id": 1,
+      "name": "OpenClassrooms",
+      "url": "https://yonja.io",
+      "start": "December 2019",
+      "finish": "February 2020",
+      "title": "Web Development",
+      "location": "Paris, France - Remote"
+    },
+    {
+      "id": 2,
+      "name": "Harare Institute of Technology",
+      "url": "https://yonja.io",
+      "start": "August 2015",
+      "finish": "August 2017",
+      "title": "Computer Science",
+      "location": "Harare, Zimbabwe"
+    }
+  ],
   "projects": [
     {
       "category": "professional",

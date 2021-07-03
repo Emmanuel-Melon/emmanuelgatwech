@@ -1,72 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Sidebar from "../components/sidebar"
 import Recent from "../components/recent"
-import styled from "styled-components"
-
-import { 
-  FiTwitter,
-  FiGithub,
-  FiLinkedin,
-  FiArrowUpRight,
-  FiFile,
-  FiChevronDown
-} from "react-icons/fi";
-
-import data from "../data.json"
-
-const Organizations = styled.ul`
-  justify-content: sapce-between;
-  display: flex;
-  flex-direction: column-reverse;
-  width: 700px;
-  flex: 2;
-  & li {
-    background: #184d47;
-    border-r
-    margin-ri
-    padding: 0.4rem;
-    color: #fff;
-  
-  }
-`;
-
-const Organization = styled.div`
-  border-radius: var(--border-radius);
-  margin-top: 1rem;
-  color: #fff;
-  box-shadow: var(--box-shadow);
-  background: var(--content-background);
-  border: solid 0.1rem var(--content-background);
-  padding: 1rem;
-
-  & hover {
-    border-bottom: solid 0.15rem var(--primary-color);
-  }
-`;
-
-const Org = ({
-  name,
-  url,
-  start,
-  finish,
-  title,
-  location,
-  id
-}) => {
-  return (
-    <Organization className="org">
-      <div className="org-head">
-        <div className="comp">
-          <p>{title}</p>
-          <h4 className="other-heading">{name} <FiArrowUpRight /></h4>
-        </div>
-        <p className="duration">{start} - {finish}</p>
-      </div>
-    </Organization>
-  )
-}
+import { SocialLinks } from "../components/social"
+import { CurrentWork, Education, PreviousExperience } from "../components/experience"
+import { Button } from "../components/button"
+import { Icon } from "../components/icon"
+import { FiSend } from "react-icons/fi"
+import mentor from "../images/mentor.png"
 
 const IndexPage = () => (
   <Layout>
@@ -86,48 +27,41 @@ const IndexPage = () => (
     />
     <section>
       <h1>Emmanuel Daniel</h1>
-      <h4>But you can call me Eman, and the E is for Energy ⚛️</h4>
-      <p> I am a Full-Stack Software Developer with nearly 3 years of relevant experience and a proven track record of success in achieving extraordinary results.</p>
-      <div>
-      <h4>Connect with me</h4>
-      <ul className="social">
-        <li>
-          <a href="https://twitter.com/junubiman" target="_blank"> <FiTwitter className="icon" /> Twitter <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiGithub className="icon" /> Github <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiLinkedin className="icon" /> LinkedIn <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiFile className="icon" /> Resume <FiArrowUpRight />
-          </a>
-        </li>
-      </ul>
+      <div style={{ padding: '1rem'}}>
+      <p style={{ textAlign: 'center'}}>Call me Eman, and the E is for Energy</p>
+      <p  style={{ textAlign: 'center', width: '60%', margin: '0 auto' }}> I am a Full-Stack Software Developer with nearly 3 years of relevant experience and a proven track record of success in achieving extraordinary results.</p>
+      </div>
+      <CurrentWork />
+      <div className="mentor">
+        <div style={{ flex: '2', marginLeft: '1rem' }}>
+          <h4>Mentorship Available</h4>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+          <p>Available for mentoring on Coding Coach</p>
+          <Button>Message Me!</Button>
+          </div>
+          <SocialLinks />
+        </div>
       </div>
     </section>
-    <section className="summary">
-      <div className="summary-left">
-        <h4>Currently</h4>
-      <Sidebar />
+    <section>
+      <h1>Background</h1>
+      <p style={{ textAlign: 'center' }}>I wrote my first line of code on the 12th of September 2015, in the C language!</p>
+      <div className="mentor">
+        <div style={{ flex: '2', marginLeft: '1rem' }}>
+        <h3>Work Experience</h3>
+          <PreviousExperience />
+          <div style={{ display: 'flex', alignItems: 'center'}}>
+          </div>
+        </div>
+      </div>      
+      <div className="mentor">
+        <div style={{ flex: '2', marginLeft: '1rem' }}>
+        <h3>Education</h3>
+          <Education />
+          <div style={{ display: 'flex', alignItems: 'center'}}>
+          </div>
+        </div>
       </div>
-      <div className="work">
-          <div>
-        <h4>Previously</h4>
-        <Organizations>
-          {
-            data.work.map(org => <Org {...org} key={org.id}/>)
-          }
-        </Organizations>
-      </div>
-    </div>
     </section>
     <section>
       <Recent />
