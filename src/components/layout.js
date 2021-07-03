@@ -33,7 +33,8 @@ const Layout = ({ children }) => (
             margin: `0 auto`,
             maxWidth: 1024,
             marginTop: 16,
-            display: "flex"
+            display: "flex",
+            justifyContent: 'center'
           }}
         >
           <main>{children}</main>

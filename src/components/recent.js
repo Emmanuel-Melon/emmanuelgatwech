@@ -1,9 +1,13 @@
 import React from "react"
+import { Button } from "./button"
+import styled from "styled-components"
 
 import { 
   FiCode,
   FiArrowUpRight
 } from "react-icons/fi";
+
+import data from "../data.json";
 
 
 const demos = [
@@ -27,28 +31,6 @@ const demos = [
   }
 ]
 
-const articles = [
-  {
-    category: "professional",
-    demoAvailable: true,
-    sourceAvailable: false,
-    id: 1,
-    name: "Understanding Git",
-    summary:
-      "This article will help you gain a practical understanding of Git's most commonly used features. Having a solid grasp of these concepts will help you avoid common mistakes and also use Git more efficiently.",
-  },
-  {
-    category: "professional",
-    demoAvailable: true,
-    sourceAvailable: false,
-    id: 2,
-    name: "MongoDB Aggregation Framework",
-    summary:
-      "Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together and can perform a variety of operations on the grouped data to return a single result. In SQL count(*) and with the group by is an equivalent of MongoDB aggregation."
-  }
-]
-
-
 
 const Demo = ({ summary, name }) => {
   return (
@@ -61,29 +43,37 @@ const Demo = ({ summary, name }) => {
   )
 }
 
+const Demos = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
 export default function Recent() {
   return (
-    <div>
-            <div>
-      <div className="more">
-        <h3 className="sub-heading">Recent <br />Projects</h3>
-        <p>More <FiArrowUpRight /> </p>
+    <>
+      <h1>Articles and Projects</h1>
+      <div>
+        <div className="more">
+          <h3 className="sub-heading">
+            Recent Projects
+          </h3>
+          <Button>More <FiArrowUpRight /> </Button>
+        </div>
+        <Demos>
+          { demos.map(demo => <Demo {...demo} /> )}
+        </Demos>
       </div>
-      <div className="demos">
-      {
-        demos.map(demo => <Demo {...demo} /> )
-      }</div>
-    </div>
-        <div>
-            <div className="more">
-        <h3 className="sub-heading">Recent <br />  Articles</h3>
-        <p>More <FiArrowUpRight /> </p>
-      </div>
-      <div className="demos">
-      {
-        articles.map(demo => <Demo {...demo} /> )
-      }</div>
-    </div>
-    </div>
+      <div>
+        <div className="more">
+          <h3 className="sub-heading">
+            Recent Articles
+          </h3>
+          <Button>More <FiArrowUpRight /> </Button>
+        </div>
+        <Demos>
+        { data.articles.map(demo => <Demo {...demo} /> )}</Demos>
+    </div>      
+    </>
   )
 }

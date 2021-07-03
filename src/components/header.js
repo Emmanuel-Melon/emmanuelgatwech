@@ -13,7 +13,7 @@ const Head = styled.header`
 `
 
 const Nav = styled.nav`
-    & ul {
+  & ul {
     list-style-type: none;
   }
   
@@ -25,10 +25,9 @@ const Nav = styled.nav`
 const Navbrand = styled.span`
   & a {
   width: fit-content;
-  background: var(--background);
   border-radius: var(--border-radius);
   padding: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   }
 `
 
