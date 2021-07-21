@@ -31,14 +31,8 @@ const ProjectsPage = () => {
           `Software Engineer`,
         ]}
       />
-      <>
-    <h1 className="heading">Projects</h1>
-<Filter>
-<li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          All
-          </a>
-        </li>
+        <h1 className="heading">Projects</h1>
+        <Filter>
               <li>
           <a href="https://github.com/Emmanuel-Melon" target="_blank">
           <Icon><FiFile /></Icon> Professional
@@ -59,7 +53,6 @@ const ProjectsPage = () => {
           <ProjectSummary project={project} key={project.id} />
         ))}
       </div>
-    </>
       </Layout >
   )
 }
@@ -74,41 +67,22 @@ const Project = styled.div`
   width: 75%;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  background: var(--content-background);
-  border: solid 0.2rem var(--content-background);
+  border-bottom: var(--colored-border);
+  border-top: var(--colored-border);
 `
 
 const Title = styled.h4`
   width: fit-content;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 `
 export const ProjectSummary = ({ project }) => {
   return (
     <Project>
-            <div style={{  width: '250px', maxWidth: '250px', padding: '1rem' }}>
-          <img src={mentor} alt="mentor" />
-        </div>
       <div>
       <Title>
-            {project.name}
-          </Title>
-        <p>{project.summary}</p>
-      <div>
-        {
-          project.demoAvailable ? (
-            <Button href={project.demo} target="_blank">
-              <Icon><FiArrowUpRight /></Icon> View Project
-            </Button>
-          ) : null
-        }
-        {
-          project.sourceAvailable ? (
-            <Button href={project.code} target="_blank">
-              <Icon><FiArrowUpRight /></Icon> Source Code
-            </Button>
-          ) : null
-        }
-      </div>
+        {project.name} <FiArrowUpRight />
+      </Title>
+      <p>{project.summary}</p>
     </div>
   </Project>
   )
@@ -119,13 +93,11 @@ const Filter = styled.ul`
   list-style-type: none;
   justify-content: center;
   display: flex;
-
+  flex-wrap: wrap;
   & li {
-      border-bottom: solid 0.15rem var(--content-background);
-  box-shadow: var(--box-shadow);
-  border-top: solid 0.15rem var(--content-background);
-  box-shadow: var(--box-shadow);
-  margin: 1rem;
+    border-bottom: solid 0.15rem #FAFAFA;
+    border-top: solid 0.15rem #FAFAFA;
+    margin: 1rem;
   }
 `;
 

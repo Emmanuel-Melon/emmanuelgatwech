@@ -1,13 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Recent from "../components/recent"
+import { Articles, Portfolio } from "../components/recent"
 import { SocialLinks } from "../components/social"
-import { CurrentWork, Education, PreviousExperience } from "../components/experience"
+import { CurrentWork } from "../components/experience"
+import { Background } from "../components/background"
 import { Button } from "../components/button"
-import { Icon } from "../components/icon"
-import { FiSend } from "react-icons/fi"
-import mentor from "../images/mentor.png"
 
 const IndexPage = () => (
   <Layout>
@@ -26,46 +24,22 @@ const IndexPage = () => (
       ]}
     />
     <section>
-      <h1>Emmanuel Daniel</h1>
-      <div style={{ padding: '1rem'}}>
-      <p style={{ textAlign: 'center'}}>Call me Eman, and the E is for Energy</p>
-      <p  style={{ textAlign: 'center', width: '60%', margin: '0 auto' }}> I am a Full-Stack Software Developer with nearly 3 years of relevant experience and a proven track record of success in achieving extraordinary results.</p>
+      <h1>Eman</h1>
+      <div style={{ width: "100px", margin: '0 auto' }}>
+        <img src="http://thedorkfamily.ca/images/gusIcon.png" alt="" />
+      </div>
+      <div style={{ width: '70%', margin: '1rem auto', textAlign: 'center' }}>
+        <h3 style={{ fontSize: "2rem"}} >Eman is a Software Developer from South Sudan who likes to writes <span className="service">articles,</span> <span className="service">mentors,</span> and contributes to <span className="service">open source.</span></h3>
       </div>
       <CurrentWork />
-      <div className="mentor">
-        <div style={{ flex: '2', marginLeft: '1rem' }}>
-          <h4>Mentorship Available</h4>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
-          <p>Available for mentoring on Coding Coach</p>
-          <Button>Message Me!</Button>
-          </div>
-          <SocialLinks />
-        </div>
+      <div style={{ textAlign: 'center', padding: '1rem' }}>
+        <Button>Message Me</Button>
       </div>
+      <SocialLinks />
     </section>
-    <section>
-      <h1>Background</h1>
-      <p style={{ textAlign: 'center' }}>I wrote my first line of code on the 12th of September 2015, in the C language!</p>
-      <div className="mentor">
-        <div style={{ flex: '2', marginLeft: '1rem' }}>
-        <h3>Work Experience</h3>
-          <PreviousExperience />
-          <div style={{ display: 'flex', alignItems: 'center'}}>
-          </div>
-        </div>
-      </div>      
-      <div className="mentor">
-        <div style={{ flex: '2', marginLeft: '1rem' }}>
-        <h3>Education</h3>
-          <Education />
-          <div style={{ display: 'flex', alignItems: 'center'}}>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <Recent />
-    </section>
+    <Background />
+    <Portfolio />
+    <Articles />
   </Layout>
 )
 

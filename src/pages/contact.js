@@ -6,19 +6,21 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 import { Input } from "../components/input"
 import { Button } from "../components/button"
-
-import { 
-  FiTwitter,
-  FiGithub,
-  FiLinkedin,
-  FiArrowUpRight,
-} from "react-icons/fi";
+import { SocialLinks } from "../components/social"
 
 const Message = styled.textarea`
 background: var(--content-background);
-color: var(--white);
+border: var(--border);
+box-shadow: var(--box-shadow);
+width: 100%;
 padding: 0.5rem;
 `;
+
+const Form = styled.form`
+  padding: var(--padding);
+  width: 75%;
+  margin: 0 auto;
+`
 
 const types = new Map();
 types.set('email', /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/);
@@ -42,43 +44,23 @@ const ContactPage = () => {
   const handleEmailChange = e => {
     const regex = new RegExp(types.get('email'));
     const isValid = regex.test(e.target.value);
-    console.log(isValid)
     setEmail(e.target.value)
   }
 
   const handleInputChange = e => {
     const regex = new RegExp(types.get('name'));
     const isValid = regex.test(e.target.value);
-    console.log(isValid)
     setNameValid(isValid)
     setName(e.target.value)
   }
 
   return (
     <Layout>
-      <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} />
-      <div>
+      <SEO title="Projects" keywords={[`Emmanuel Daniel`, `Emmanuel   Gatwech`, `react`, `Node.js`, `Eman`, `Junubiman`, `South Sudan`, `Juba`, `Software Engineer`]} 
+      />
       <h1 className='heading'>Contact Me</h1>
-        <ul style={{ display: 'flex' }}>
-        <li>
-          <a href="https://twitter.com/junubiman" target="_blank"> <FiTwitter /> Twitter <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiGithub /> Github <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiLinkedin /> LinkedIn <FiArrowUpRight />
-          </a>
-        </li>
-      </ul>
-        <p>
-        Send me a message or two and I will most likely reply!
-        </p>
-      <form method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
+      <p style={{ textAlign: 'center', width: 'fit-content', margin: '0 auto' }}>Eman is a Software Developer from South Sudan who likes to writes articles, mentors, and contributes to open source.</p>
+      <Form method="post" action="https://formspree.io/mzbdqweb" onSubmit={handleSubmit}>
             <div>
                 <Input
                     type="text"
@@ -93,8 +75,8 @@ const ContactPage = () => {
               <Message id="message" placeholder="Your Message" cols="44" rows="5" name="message" value={message} onChange={e => setMessage(e.target.value)}/>
             </div>
             <Button type="submit">Send </Button>
-          </form>
-      </div> 
+          </Form>
+                  <SocialLinks />
     </Layout>
   )
 }
