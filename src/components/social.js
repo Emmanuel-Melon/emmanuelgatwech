@@ -4,22 +4,27 @@ import styled from "styled-components"
 import { 
   FiTwitter,
   FiGithub,
-  FiLinkedin,
-  FiArrowUpRight,
-  FiFile,
-  FiChevronDown,
-  FiUser,
-  FiBriefcase
+  FiLinkedin
 } from "react-icons/fi";
+import { Icon } from "./icon"
 
 const Social = styled.ul`
   display: flex;
   align-items: center;
-  width: fit-content;
-  margin: 1rem auto;
+  justify-content: space-evenly;
+  width: 250px;
+  margin: 0rem auto;
+  border-bottom: var(--border);
+  border-top: var(--border);
+  padding: 0;
+    & a {
+      color: #fff !important;
+    }
   & li {
-    box-shadow: var(--box-shadow);
-    border: solid 0.15rem var(--content-background);
+
+    & a {
+      color: #fff !important;
+    }
     &:hover {
       cursor: pointer;
     }
@@ -28,26 +33,24 @@ const Social = styled.ul`
 
 export const SocialLinks = () => {
   return (
+    <>
+      <p style={{ textAlign: 'center' }}>Let's connect!</p>
     <Social>
         <li>
-          <a href="https://twitter.com/junubiman" target="_blank"> <FiTwitter /> Twitter <FiArrowUpRight />
+          <a href="https://twitter.com/junubiman" target="_blank"> <Icon><FiTwitter /></Icon>
           </a>
         </li>
         <li>
           <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiGithub /> Github <FiArrowUpRight />
+          <Icon><FiGithub /></Icon>
           </a>
         </li>
         <li>
           <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiLinkedin /> LinkedIn <FiArrowUpRight />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Emmanuel-Melon" target="_blank">
-          <FiFile /> Resume <FiArrowUpRight />
+          <Icon><FiLinkedin /></Icon>
           </a>
         </li>
       </Social>
+    </>
   )
 }

@@ -5,9 +5,10 @@ const StyledInput = styled.input`
   margin-right: 0.5rem;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  border: solid 0.1rem var(--white);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
   background: var(--content-background);
-  color: var(--white);
+  width: 100%;
 `;
 
 export const Input = ({ 

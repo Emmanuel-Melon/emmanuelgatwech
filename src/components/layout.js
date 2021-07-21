@@ -4,10 +4,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import styled from "styled-components"
 import Header from "./header"
-import "./layout.css"
 
 const Footer = styled.footer`
-
   padding: 1rem;
   text-align: center;
 `
@@ -32,9 +30,9 @@ const Layout = ({ children }) => (
           style={{
             margin: `0 auto`,
             maxWidth: 1024,
-            marginTop: 16,
             display: "flex",
-            justifyContent: 'center'
+            justifyContent: 'center',
+            alignItems: 'center'
           }}
         >
           <main>{children}</main>

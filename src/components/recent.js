@@ -1,79 +1,63 @@
 import React from "react"
-import { Button } from "./button"
 import styled from "styled-components"
+import { FiExternalLink } from "react-icons/fi"
+import data from "../data.json"
 
-import { 
-  FiCode,
-  FiArrowUpRight
-} from "react-icons/fi";
-
-import data from "../data.json";
-
-
-const demos = [
-  {
-    category: "professional",
-    demoAvailable: true,
-    sourceAvailable: false,
-    id: 1,
-    name: "LabXpert",
-    summary:
-      "LabXpert is a web-based medical laboratory management information system. Once connected to laboratory testing equipment, LabXpert will automatically retrieve completed test results. Results are retrieved in real-time or whenever there is an internet connection.",
-  },
-  {
-    category: "professional",
-    demoAvailable: true,
-    sourceAvailable: false,
-    id: 2,
-    name: "Biti",
-    summary:
-      "Automated job tracking software. Biti allows you track job applications, create job search strategies and more!"
+const Content = styled.div`
+  margin: 1rem auto;
+  width: 75%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border-bottom: var(--colored-border);
+  border-top: var(--colored-border);
+  padding: var(--padding);
+  & a {
+    color: var(--accent-color);
   }
-]
 
+`
 
-const Demo = ({ summary, name }) => {
+const Demo = ({ summary, name, url }) => {
   return (
-    <div className="demo">
-      <h4>{name} <FiArrowUpRight /></h4>
+    <Content>
+      <a href={url}>{name} <FiExternalLink /></a>
       <p>
       {summary}
       </p>
-    </div>
+    </Content>
   )
 }
 
-const Demos = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
+const Links = styled.div`
+  text-align: center;
+`
 
-export default function Recent() {
+export const Portfolio = () => {
   return (
-    <>
-      <h1>Articles and Projects</h1>
-      <div>
-        <div className="more">
-          <h3 className="sub-heading">
-            Recent Projects
-          </h3>
-          <Button>More <FiArrowUpRight /> </Button>
+    <section>
+      <h1>Portfolio</h1>
+      <p style={{ textAlign: 'center' }}>I wrote my first line of code on the 12th of September 2015, in the C language!</p>
+        <div>
+          { data.projects.slice(0, 2).map(demo => <Demo {...demo} /> )}
         </div>
-        <Demos>
-          { demos.map(demo => <Demo {...demo} /> )}
-        </Demos>
-      </div>
-      <div>
-        <div className="more">
-          <h3 className="sub-heading">
-            Recent Articles
-          </h3>
-          <Button>More <FiArrowUpRight /> </Button>
+        <Links>
+          <a href="/projects">View More</a>
+        </Links>   
+    </section>
+  )
+}
+
+export const Articles = () => {
+  return (
+    <section>
+      <h1>Articles</h1>
+      <p style={{ textAlign: 'center' }}>I wrote my first line of code on the 12th of September 2015, in the C language!</p>
+        <div>
+          { data.articles.slice(0, 2).map(demo => <Demo {...demo} /> )}
         </div>
-        <Demos>
-        { data.articles.map(demo => <Demo {...demo} /> )}</Demos>
-    </div>      
-    </>
+        <Links>
+          <a href="#">View More</a>
+        </Links>   
+    </section>
   )
 }

@@ -1,20 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 
-// props!
 const StyledButton = styled.button`
-  background: transparent;
-  border-top: solid 0.1rem var(--secondary-color);
-  border-bottom: solid 0.1rem var(--secondary-color);
   border-left: none;
   border-right: none;
-  color: #fff;
+  color: var(--white);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  border: var(--border);
+  background: var(--secondary-color);
+  padding: 0.5rem;
+  width: 150px;
+  margin: 0 auto;
   &:hover {
     cursor: pointer;
-    border-top: solid 0.1rem var(--secondary-color);
-    border-bottom: solid 0.1rem var(--secondary-color);
   }
 `;
 

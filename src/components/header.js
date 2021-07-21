@@ -5,57 +5,34 @@ import React from "react"
 import styled from 'styled-components'
 
 const Head = styled.header`
-  margin: 0rem auto;
-  background: var(--content-background);
-  padding: 1rem;
   display: flex;
   justify-content: center;
+  border-radius: var(--border-radius);
+  padding: 1rem;
 `
 
 const Nav = styled.nav`
-  & ul {
-    list-style-type: none;
-  }
-  
+  border-bottom: var(--colored-border);
+  border-top: var(--colored-border);  
   & a {
-    margin-right: 1rem;
+    padding: var(--padding);
   }
-`
-
-const Navbrand = styled.span`
-  & a {
-  width: fit-content;
-  border-radius: var(--border-radius);
-  padding: 0.5rem;
-  color: var(--accent-color);
-  }
-`
-
-const Hamburger = styled.div`
-  display: none;
 `
 
 const Navbar = styled.div`
-        max-width: 1024px;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        display: flex;
-        align-items:center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 `
 
 const Header = ({ siteTitle }) => (
   <Head title={siteTitle}>
     <Navbar>
-      <Navbrand style={{ margin: 0 }}>
-        <Link
-          to="/"
-        >
-          Home
-        </Link>
-      </Navbrand>
       <Nav>
-        <Link to="/projects/"> Projects</Link>
+        <Link to="/">Home</Link>
         <Link to="/contact/">Contact</Link>
+        <Link to="/projects/"> Projects</Link>
       </Nav>
     </Navbar>
     <title></title>
