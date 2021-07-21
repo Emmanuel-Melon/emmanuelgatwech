@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Dosis`, `Righteous`],
+        fonts: [`Arvo`, `Righteous`],
         display: "swap",
       },
     },
