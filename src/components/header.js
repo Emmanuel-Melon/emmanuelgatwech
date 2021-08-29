@@ -12,8 +12,7 @@ const Head = styled.header`
 `
 
 const Nav = styled.nav`
-  border-bottom: var(--colored-border);
-  border-top: var(--colored-border);  
+
   & a {
     padding: var(--padding);
   }

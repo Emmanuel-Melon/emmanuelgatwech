@@ -34,7 +34,6 @@ const Social = styled.ul`
 export const SocialLinks = () => {
   return (
     <>
-      <p style={{ textAlign: 'center' }}>Let's connect!</p>
     <Social>
         <li>
           <a href="https://twitter.com/junubiman" target="_blank"> <Icon><FiTwitter /></Icon>

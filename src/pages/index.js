@@ -24,18 +24,17 @@ const IndexPage = () => (
       ]}
     />
     <section>
-      <h1>Eman</h1>
       <div style={{ width: "100px", margin: '0 auto' }}>
         <img src="http://thedorkfamily.ca/images/gusIcon.png" alt="" />
       </div>
-      <div style={{ width: '70%', margin: '1rem auto', textAlign: 'center' }}>
-        <h3 style={{ fontSize: "2rem"}} >Eman is a Software Developer from South Sudan who likes to writes <span className="service">articles,</span> <span className="service">mentors,</span> and contributes to <span className="service">open source.</span></h3>
+      <h1>Eman</h1>
+      <div style={{ margin: '1rem auto', textAlign: 'center' }}>
+        <p style={{ fontSize: "2.5rem"}} >I like to craft solid and scalable frontend products with great user experiences.</p>
       </div>
       <CurrentWork />
       <div style={{ textAlign: 'center', padding: '1rem' }}>
         <Button>Message Me</Button>
       </div>
-      <SocialLinks />
     </section>
     <Background />
     <Portfolio />

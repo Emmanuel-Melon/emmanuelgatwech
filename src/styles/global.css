@@ -15,7 +15,7 @@
   --grey-background: #fafafa;
   --border: solid 0.2rem #fafafa;
   --colored-border: solid 0.2rem  rgba(39,164,152, 0.2);
-  --accent-color-light: rgba(255, 71, 126, 0.05);
+  --accent-color-light: rgba(255, 71, 126, 0.02);
   --secondary-color-light: rgba(39,164,152, 0.05);
 }
 
@@ -27,8 +27,7 @@ body {
   letter-spacing: 1px;
   padding:  0;
   margin: 0;
-  font-family: "Arvo", Arial, Helvetica, sans-serif;
-
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -45,7 +44,7 @@ h6 {
 
 h1 {
   color: var(--secondary-color);
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -57,12 +56,7 @@ section {
   height: 100vh;
 }
 
-p,
-a,
-li,
-label,
-button {
-  font-family: "Arvo", Arial, Helvetica, sans-serif;
+a {
   color: var(--text-color);
   text-decoration: none;
 }
@@ -82,10 +76,3 @@ ul {
   padding: 0;
 }
 
-.service {
-  border-bottom: solid 2px var(--secondary-color);
-}
-
-.service:nth-child(odd) {
-  border-bottom: solid 2px var(--accent-color);
-}

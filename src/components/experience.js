@@ -18,10 +18,11 @@ const Current = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   & li {
-    margin: 0.5rem;
+    margin: 0.8rem;
+    width: fit-content;
     border-bottom: var(--border);
     border-top: var(--border);
-    width: max-content;
+
   }
 `;
 
@@ -31,15 +32,15 @@ export const CurrentWork = () => {
     <Current>
       <li>
         <a href="https://gitstart.com" target="_blank">
-          <Icon><FiBriefcase /></Icon>FullStack Engineer - GitStart <FiExternalLink />
+          <Icon><FiBriefcase /></Icon>FullStack Engineer - GitStart
         </a>
       </li>
-      <li><Icon><FiHeart /></Icon> Founder - Biti <FiExternalLink /></li>
+      <li><Icon><FiHeart /></Icon> Founder - Biti </li>
       <li>
-        <a href="https://github.com/Emmanue-Melon"  target="_blank"><Icon><FiGitCommit /></Icon> Open Source Contributor <FiExternalLink /></a>
+        <a href="https://github.com/Emmanue-Melon"  target="_blank"><Icon><FiGitCommit /></Icon> Open Source Contributor </a>
       </li>
       <li>
-        <a href="https://mentors.codingcoach.io/?name=Emmanuel+Gatwech" target="_blank"><Icon><FiBookOpen/></Icon>Mentor - Coding Coach <FiExternalLink /></a>
+        <a href="https://mentors.codingcoach.io/?name=Emmanuel+Gatwech" target="_blank"><Icon><FiBookOpen/></Icon>Mentor - Coding Coach </a>
       </li>
       <li><Icon><FiPrinter /></Icon>Technical Content Writer</li>
       <li><Icon><FiCoffee /></Icon>Amatuer Chef</li>

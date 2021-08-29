@@ -64,11 +64,11 @@ const Project = styled.div`
   display: flex;
   padding: var(--padding);
   margin: 1rem auto;
-  width: 75%;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   border-bottom: var(--colored-border);
   border-top: var(--colored-border);
+  background: var(--accent-color-light);
 `
 
 const Title = styled.h4`

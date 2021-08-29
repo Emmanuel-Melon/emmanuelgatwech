@@ -44,38 +44,6 @@
       "category": "professional",
       "demoAvailable": true,
       "sourceAvailable": false,
-      "id": 1,
-      "name": "LabXpert",
-      "summary":
-      "A medical laboratory information system for managing and disseminating COVID-19 and Tuberculosis tests in Uganda. The system is supported by a network of GeneXpert machines distributed across different facilities in the country.",
-      "skills": ["Redis", "TypeScript", "MongoDB", "TCP", "Node.js", "React.js"],
-      "link": "",
-      "completed": true,
-      "started": "November",
-      "code": "https://github.com/Emmanuel-Melon/la-revue",
-      "url": "http://acham.life",
-      "image": true
-    },
-    {
-      "category": "professional",
-      "demoAvailable": true,
-      "sourceAvailable": false,
-      "id": 2,
-      "name": "Test & Fly",
-      "summary":
-      "Test & Fly was founded in 2020 as a state of the art laboratory specialized in PCR-SARS-Cov-2 diagnostic development. We perform advanced (PCR) diagnostic testing on behalf of other government and private clinical laboratories.",
-      "skills": ["Redis", "TypeScript", "MongoDB", "TCP", "Node.js", "React.js"],
-      "link": "",
-      "completed": true,
-      "started": "November",
-      "code": "https://github.com/Emmanuel-Melon/la-revue",
-      "url": "http://acham.life",
-      "image": true
-    },
-    {
-      "category": "professional",
-      "demoAvailable": true,
-      "sourceAvailable": false,
       "id": 3,
       "name": "Claudia Acham",
       "summary":

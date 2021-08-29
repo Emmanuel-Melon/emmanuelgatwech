@@ -9,16 +9,16 @@ import { Button } from "../components/button"
 import { SocialLinks } from "../components/social"
 
 const Message = styled.textarea`
-background: var(--content-background);
-border: var(--border);
-box-shadow: var(--box-shadow);
-width: 100%;
-padding: 0.5rem;
+  background: var(--content-background);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 `;
 
 const Form = styled.form`
   padding: var(--padding);
-  width: 75%;
   margin: 0 auto;
 `
 

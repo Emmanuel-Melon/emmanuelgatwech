@@ -36,7 +36,7 @@ const Org = ({
     <Organization>
       <li>
         <div>
-          <Icon><FiBriefcase /></Icon> <a href={url}>{title} - {name} <FiExternalLink /></a>
+          <Icon><FiBriefcase /></Icon> <a href={url} target="_blank">{title} - {name} <FiExternalLink /></a>
         </div>
         <span>{start} - {finish}</span>
       </li>
@@ -55,7 +55,7 @@ const School = ({
     <Organization>
       <li className="org-head">
         <div>
-          <Icon><FiBookOpen /></Icon> <a href={url}>{title} - {name} <FiExternalLink /></a>
+          <Icon><FiBookOpen /></Icon> <a href={url} target="_blank">{title} - {name} <FiExternalLink /> </a>
         </div>
         <span className="duration">{start} - {finish}</span>
       </li>

@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
           className="scroll-container"
           style={{
             margin: `0 auto`,
-            maxWidth: 1024,
+            width: 1024,
             display: "flex",
             justifyContent: 'center',
             alignItems: 'center'

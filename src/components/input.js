@@ -9,6 +9,7 @@ const StyledInput = styled.input`
   border: var(--border);
   background: var(--content-background);
   width: 100%;
+  font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 `;
 
 export const Input = ({ 
